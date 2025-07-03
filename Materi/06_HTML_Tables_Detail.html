@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Tabel HTML</title>
+</head>
+<body>
+
+    <h1>Laporan Penjualan Buah - Juni 2025</h1>
+
+    <table border="3" style="width:100%; border-collapse: separate;">
+      <!--border: ketebalan garis, width: ukuran tabel, border-collapse: model perbatasan antar sel(kotak)  -->
+      <thead>
+        <tr>
+          <th rowspan="2">No.</th> 
+          <th rowspan="2">Nama Buah</th>
+          <th colspan="2">Status Penjualan</th>
+        </tr>
+        <tr>
+          <th>Terjual (Kg)</th>
+          <th>Stok (Kg)</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>1.</td>
+          <td>Apel</td>
+          <td>120</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td>2.</td>
+          <td>Jeruk</td>
+          <td>95</td>
+          <td>45</td>
+        </tr>
+        <tr>
+          <td>3.</td>
+          <td>Mangga</td>
+          <td>150</td>
+          <td>15</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td colspan="3"><strong>Total Terjual</strong></td>
+          <td><strong>365 Kg</strong></td>
+        </tr>
+      </tfoot>
+
+    </table>
+
+</body>
+</html>

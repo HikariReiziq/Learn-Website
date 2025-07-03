@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar HTML Lists</title>
+</head>
+<body>
+    <h1>Mengenal 3 Jenis List di HTML</h1>
+
+    <h2>1. Unorder List (&lt;ul&gt;)</h2>
+    <p>Digunakan untuk daftar item di mana urutannya tidak penting. Secara default, akan ditandai dengan bulatan (bullet points).</p>
+    <ul> <li>Kopi</li> <li>Teh</li> <li>Susu</li></ul>
+    <!-- li = List Item -->
+    <hr>
+
+    <h2>2. Ordered List (&lt;ol&gt;)</h2>
+    <p>Digunakan untuk daftar item di mana urutannya PENTING. Secara default, akan ditandai dengan angka (1, 2, 3, ...).</p>
+    <ol> <li>Bangun tidur</li> <li>Mandi</li>
+        <li>Sarapan</li>
+        <li>Berangkat kerja</li>
+    </ol>
+    
+    <hr>
+
+    <h2>3. Description List (&lt;dl&gt;)</h2>
+    <p>Digunakan untuk menyajikan daftar istilah dan definisinya (seperti kamus atau glosarium).</p>
+    <dl> <dt>HTML</dt> <dd>Singkatan dari HyperText Markup Language, digunakan untuk membuat struktur halaman web.</dd> <dt>CSS</dt>
+      <dd>Singkatan dari Cascading Style Sheets, digunakan untuk mengatur tampilan dan gaya halaman web.</dd>
+    </dl>
+    <!-- dt = Definition Term -->
+    <!-- dd = Definition Description -->
+    <hr>
+
+    <h2>Contoh Nested List (List Bersarang)</h2>
+    <p>Anda bisa memasukkan list di dalam list lain. Ini sangat umum digunakan untuk membuat menu navigasi dropdown.</p>
+    <ul>
+        <li>Minuman
+            <ul>
+                <li>Kopi</li>
+                <li>Teh</li>
+            </ul>
+        </li>
+        <li>Makanan
+            <ol>
+                <li>Nasi Goreng</li>
+                <li>Mie Ayam</li>
+            </ol>
+        </li>
+    </ul>
+
+</body>
+</html>
