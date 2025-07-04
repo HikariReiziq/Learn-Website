@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Form HTML</title>
+</head>
+<body>
+    <h1>Formulir Pendaftaran Kursus</h1>
+
+    <form action="#" method="POST">
+        <fieldset style="width: fit-content;">
+            <legend>Informasi Pribadi</legend>
+            <p>
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username" placeholder="Minimal 6 karakter" required>
+            </p>
+            <p>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="user_password" required>
+            </p>
+            <p>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="user_email" placeholder="contoh@email.com" required>
+            </p>
+        </fieldset>
+
+        <fieldset style="width: fit-content;">
+            <legend>Pilihan Kursus</legend>
+            <p>
+                <label>Pilih Tingkatan:</label><br>
+                <input type="radio" id="pemula" name="tingkatan" value="pemula" checked>
+                <label for="pemula">Pemula</label><br>
+
+                <input type="radio" id="menengah" name="tingkatan" value="menengah">
+                <label for="menengah">Menengah</label><br>
+            </p>
+            <p>
+                <label for="pilihan_kursus">Pilih Kursus:</label><br>
+                <select id="pilihan_kursus" name="kursus">
+                    <option value="html">Dasar HTML</option>
+                    <option value="css">Dasar CSS</option>
+                    <option value="js" selected>Dasar JavaScript</option>
+                </select>
+            </p>
+            <p>
+                <label>Topik Tambahan (bisa lebih dari satu):</label><br>
+                <input type="checkbox" id="database" name="tambahan" value="db">
+                <label for="database">Database</label><br>
+                <input type="checkbox" id="api" name="tambahan" value="api">
+                <label for="api">API</label><br>
+            </p>
+        </fieldset>
+
+        <fieldset style="width: fit-content;">
+            <legend>Keterangan</legend>
+            <p>
+                <label for="pesan">Alasan mengikuti kursus:</label><br>
+                <textarea id="pesan" name="alasan" rows="4" cols="50"></textarea>
+            </p>
+        </fieldset>
+        
+        <br>
+        <button type="submit">Daftar Sekarang</button>
+        <button type="reset">Reset Formulir</button>
+    </form>
+</body>
+</html>
