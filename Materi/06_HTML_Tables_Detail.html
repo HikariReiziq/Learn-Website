@@ -28,26 +28,26 @@
           <td>1.</td>
           <td>Apel</td>
           <td>120</td>
-          <td>30</td>
+          <td>35</td>
         </tr>
         <tr>
           <td>2.</td>
           <td>Jeruk</td>
-          <td>95</td>
-          <td>45</td>
+          <td>100</td>
+          <td>55</td>
         </tr>
         <tr>
           <td>3.</td>
           <td>Mangga</td>
           <td>150</td>
-          <td>15</td>
+          <td>20</td>
         </tr>
       </tbody>
 
       <tfoot>
         <tr>
           <td colspan="3"><strong>Total Terjual</strong></td>
-          <td><strong>365 Kg</strong></td>
+          <td><strong>385 Kg</strong></td>
         </tr>
       </tfoot>
 
@@ -55,3 +55,72 @@
 
 </body>
 </html>
+
+<!-- Tentu, pertanyaan yang sangat bagus\! Memahami cara kerja `colspan` dan `rowspan` adalah kunci untuk membuat tabel yang kompleks dan rapi. Mari kita bedah logikanya dengan analogi dan visualisasi.
+
+Anggap saja membuat tabel itu seperti membangun dinding-dinding kecil untuk membuat kamar-kamar (sel).
+
+  * `colspan` adalah perintah untuk **"menghancurkan dinding di sebelah kanan"**.
+  * `rowspan` adalah perintah untuk **"menghancurkan lantai di bawah"**.
+
+-----
+
+### Bagaimana `colspan="2"` Bekerja pada Sel "Status Penjualan"
+
+Mari kita lihat struktur baris pertama tabel kita:
+
+```html
+<tr>
+  <th rowspan="2">No.</th>
+  <th rowspan="2">Nama Buah</th>
+  <th colspan="2">Status Penjualan</th> </tr>
+```
+
+1.  **Tanpa `colspan`:** Jika kita tidak menggunakan `colspan`, baris ini akan memiliki 3 sel (`<th>`). Browser akan menggambar 3 kamar bersebelahan.
+
+    | No. | Nama Buah | Status Penjualan |
+    | :-- | :-------- | :--------------- |
+
+2.  **Logika Browser dengan `colspan="2"`:** Saat browser membaca `colspan="2"` pada sel "Status Penjualan", ia berpikir seperti ini:
+
+    > "Oke, sel 'Status Penjualan' ini tidak boleh berukuran normal. Ia harus **memakan tempat sebanyak 2 kolom**. Aku akan menggambarnya, lalu aku akan menghancurkan dinding di sebelah kanannya untuk mengambil alih ruang milik sel berikutnya."
+
+3.  **Hasilnya:** Sel "Status Penjualan" sekarang membentang dan menempati ruangnya sendiri **DAN** ruang yang seharusnya menjadi milik sel ke-4. Karena baris ini sekarang sudah terisi penuh (1 sel + 1 sel + 2 sel = 4 kolom), browser akan pindah ke baris berikutnya.
+
+    Inilah kenapa pada baris kedua (`<tr>`), kita hanya perlu mendefinisikan dua sel (`<th>Terjual (Kg)</th>` dan `<th>Stok (Kg)</th>`). Kedua sel ini akan secara otomatis ditempatkan **tepat di bawah** ruang kosong yang diciptakan oleh `colspan` dari sel "Status Penjualan".
+
+    | No. (rowspan) | Nama Buah (rowspan) | **Status Penjualan (colspan=2)** |
+    | :------------ | :------------------ | :------------------------------ | :--- |
+    |               |                     | Terjual (Kg)                    | Stok (Kg) |
+
+-----
+
+### Bagaimana `rowspan="2"` Bekerja pada Sel "No." dan "Nama Buah"
+
+Sekarang kita lihat sel pertama di baris pertama:
+
+```html
+<tr>
+  <th rowspan="2">No.</th> <th rowspan="2">Nama Buah</th>
+  <th colspan="2">Status Penjualan</th>
+</tr>
+
+<tr>
+  <th>Terjual (Kg)</th>
+  <th>Stok (Kg)</th>
+</tr>
+```
+
+1.  **Tanpa `rowspan`:** Jika tanpa `rowspan`, sel "No." hanya akan setinggi satu baris. Maka, di baris kedua, kita *harus* membuat sel baru di bawahnya.
+
+2.  **Logika Browser dengan `rowspan="2"`:** Saat browser membaca `rowspan="2"` pada sel "No.", ia berpikir:
+
+    > "Sel 'No.' ini spesial. Ia harus **memakan tempat sebanyak 2 baris**. Aku akan menggambarnya, lalu aku akan menghancurkan lantai di bawahnya untuk mengambil alih ruang di baris berikutnya pada posisi kolom yang sama."
+
+3.  **Hasilnya:** Sel "No." sekarang membentang ke bawah. Karena ia sudah "memesan" tempat di baris kedua pada kolom pertama, maka saat browser menggambar baris kedua, ia tahu bahwa **posisi kolom pertama sudah terisi**. Oleh karena itu, sel pertama yang kita definisikan di baris kedua (`<th>Terjual (Kg)</th>`) akan otomatis digambar di **posisi kolom ketiga**, karena posisi kolom pertama dan kedua sudah "dipesan" oleh sel "No." dan "Nama Buah" dari baris di atasnya.
+
+Inilah **aturan paling penting** saat menggunakan `rowspan`:
+
+> Jika sebuah sel memiliki `rowspan="2"`, Anda **tidak boleh** mendefinisikan sel untuk kolom tersebut di baris berikutnya, karena tempatnya sudah diambil alih.
+
+Semoga visualisasi dan penjelasan logika ini membuat cara kerjanya menjadi lebih jelas\! Apakah ada bagian lain yang ingin Anda tanyakan? -->
