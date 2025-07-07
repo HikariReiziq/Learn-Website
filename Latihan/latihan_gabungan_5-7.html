@@ -1,61 +1,81 @@
-Tentu, sesuai permintaan, kita akan langsung mengerjakan satu latihan gabungan yang mencakup materi Bab 5 (Lists), Bab 6 (Tables), dan Bab 7 (Forms).
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar HTML Lists</title>
+</head>
+<body>
+    <h1>Pendaftaran Workshop Koding</h1>
 
-Ini akan menjadi latihan yang cukup komprehensif untuk menguji pemahaman Anda.
+    <h2>Detail Acara</h2>
+    <ul> <li><strong>Topik:</strong> "Dasar-Dasar Web Development"</li> <li><strong>Jadwal:</strong> "Sabtu, 26 Juli 2025"</li> <li><strong>Materi yang Akan Dipelajari:</strong><ol> <li>HTML & Struktur Dokumen</li> <li>CSS & Styling Dasar</li>
+        <li>JavaScript & Interaktivitas</li>
+    </ol></li></ul> 
+    <hr>
+    <h2>Jadwal Sesi Workshop</h2>
+    <table border="2">
+        <thead>
+            <tr>
+                <th>Waktu</th>
+                <th>Aktivitas</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>09:00 - 10:30</td>
+                <td>Sesi 1: Pengenalan HTML & CSS</td>
+            </tr>
+            <tr>
+                <td>10:30 - 10:45</td>
+                <td>Istirahat Kopi</td>
+            </tr>
+            <tr>
+                <td>10:45 - 12:00</td>
+                <td>Sesi 2: Pengenalan JavaScript</td>
+            </tr>
+        </tbody>
+    </table>
+        
+<hr>
+<h2>Formulir Pendaftaran</h2>
+    <form action="#" method="POST">
+        <fieldset style="width: fit-content;">
+            <legend>Informasi Pribadi</legend> 
+            <p>
+                <label for="username">Name Lengkap</label><br>
+                <input type="text" id="username" name="username">
+            </p>
+            <p>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="user_email" placeholder="contoh@email.com" required>
+            </p>
+            <p>
+                <label>Tingkat Keahlian:</label><br>
+                <input type="radio" id="pemula" name="tingkatan" value="pemula" checked>
+                <label for="pemula">Pemula</label><br>
 
-### **Latihan Gabungan (Bab 5, 6, & 7)**
-
-**Tugas:** Anda akan membuat sebuah halaman pendaftaran untuk sebuah workshop. Halaman ini akan berisi detail acara, jadwal, dan formulir pendaftaran.
-
-**Nama File:** `latihan_gabungan_5-7.html`
-
-#### **Instruksi:**
-
-Buatlah halaman HTML dengan struktur dan konten berikut:
-
----
-
-**Bagian 1: Detail Workshop (Menggunakan Lists)**
-
-1.  Buat judul utama halaman dengan `<h1>` bertuliskan "Pendaftaran Workshop Koding".
-2.  Di bawah judul, buat sub-judul `<h2>` dengan tulisan "Detail Acara".
-3.  Buat sebuah **unordered list** (`<ul>`) untuk menampilkan detail berikut:
-    * **Topik:** "Dasar-Dasar Web Development"
-    * **Jadwal:** "Sabtu, 26 Juli 2025"
-    * **Materi yang Akan Dipelajari:** (Lihat poin 4)
-4.  Di dalam item `<li>` "Materi yang Akan Dipelajari", buat sebuah **nested ordered list** (`<ol>`) untuk merinci materinya:
-    1.  HTML & Struktur Dokumen
-    2.  CSS & Styling Dasar
-    3.  JavaScript & Interaktivitas
-
----
-
-**Bagian 2: Jadwal Acara (Menggunakan Tables)**
-
-1.  Setelah bagian daftar, tambahkan garis pemisah (`<hr>`).
-2.  Buat sub-judul `<h2>` dengan tulisan "Jadwal Sesi Workshop".
-3.  Buat sebuah **tabel** (`<table>`) dengan `border="1"`.
-4.  Gunakan `<thead>` untuk membuat kepala tabel dengan kolom (`<th>`): "Waktu", "Aktivitas".
-5.  Gunakan `<tbody>` untuk mengisi data jadwal dengan 3 baris (`<tr>`) dan sel (`<td>`) sebagai berikut:
-    * `09:00 - 10:30` | `Sesi 1: Pengenalan HTML & CSS`
-    * `10:30 - 10:45` | `Istirahat Kopi`
-    * `10:45 - 12:00` | `Sesi 2: Pengenalan JavaScript`
-
----
-
-**Bagian 3: Formulir Pendaftaran (Menggunakan Forms)**
-
-1.  Setelah tabel, tambahkan lagi garis pemisah (`<hr>`).
-2.  Buat sub-judul `<h2>` dengan tulisan "Formulir Pendaftaran".
-3.  Buat sebuah **form** (`<form>`).
-4.  Di dalam form, buat elemen-elemen berikut, jangan lupa gunakan `<label>` untuk setiap input:
-    * **Nama Lengkap:** Kolom input `type="text"`.
-    * **Email:** Kolom input `type="email"`.
-    * **Tingkat Keahlian:** Pilihan **radio button** dengan dua opsi: "Pemula" dan "Menengah". Pastikan keduanya memiliki atribut `name` yang sama.
-    * **Ukuran Kaos:** Pilihan **dropdown** (`<select>`) dengan beberapa opsi (`<option>`): S, M, L, XL.
-    * **Persetujuan:** Sebuah **checkbox** dengan label "Saya setuju dengan semua syarat dan ketentuan."
-5.  Terakhir, tambahkan sebuah tombol **submit** (`<button type="submit">`) dengan tulisan "Daftar Sekarang".
-
----
-Tujuan latihan ini adalah menggabungkan kemampuan Anda dalam menyusun konten (dengan list), menyajikan data (dengan tabel), dan mengumpulkan input (dengan form) dalam satu halaman yang utuh.
-
-Selamat mengerjakan! Jika sudah selesai, silakan kirimkan kode lengkapnya untuk kita periksa bersama.
+                <input type="radio" id="menengah" name="tingkatan" value="menengah">
+                <label for="menengah">Menengah</label><br>
+            </p>
+            <p>
+                <label for="ukuran_kaos">Ukuran Kaos: </label><br>
+                <select id="ukuran_kaos" name="ukuran_kaos">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+            </p>
+            <p>
+        
+                <input type="checkbox" id="setuju" name="syarat_persetujuan" value="setuju">
+                <label for="setuju">Saya setuju dengan semua syarat dan ketentuan.</label>
+            </p>
+            <br>
+        <button type="submit">Daftar Sekarang</button>
+        <button type="reset">Reset Formulir</button>
+        </fieldset>
+    </form>
+</body>
+</html>
