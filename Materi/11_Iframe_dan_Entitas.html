@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bab 11: Iframe & Entitas</title>
+</head>
+<body>
+    <h1>Contoh Penggunaan &lt;iframe&gt;</h1>
+
+    <h3>Menyematkan Video YouTube</h3>
+    <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/videoseries?list=PL4cUxeGkcC9ivBf_eKCPIAYXWzLlPAm6G" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+    <!-- accelerometer: Sensor ini mendeteksi guncangan dan percepatan. Izin ini penting untuk fitur interaktif seperti video 360 derajat  -->
+    <!-- autoplay: putar otomatis -->
+    <!-- clipboard-write: fitur seperti tombol "Salin URL video pada waktu ini" yang sering muncul saat Anda berinteraksi dengan pemutar YouTube. -->
+    <!-- encrypted-media: Memutar media yang terenkripsi atau dilindungi hak cipta   -->
+    <!-- gyroscope: Sensor ini mendeteksi orientasi perangkat, seperti saat menonton video 360 derajat. Izin ini memungkinkan video untuk beradaptasi dengan gerakan perangkat Anda. -->
+    <!-- picture-in-picture: memungkinkan video tetap terlihat saat Anda beralih ke aplikasi lain. --> 
+    <h3>Menyematkan Google Maps</h3>
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.620392333917!2d112.75537567477526!3d-7.284018992723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fbb857754397%3A0x1d35500155b13860!2sMonumen%20Tugu%20Pahlawan%20dan%20Museum%20Sepuluh%20Nopember%20Surabaya!5e0!3m2!1sid!2sid!4v1720421255535!5m2!1sid!2sid" 
+        width="560" 
+        height="315" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    <!-- lazy loading: memungkinkan browser untuk menunda pemuatan iframe sampai pengguna benar-benar membutuhkannya, seperti saat mereka menggulir ke bawah halaman. Ini membantu mengurangi waktu muat awal halaman dan meningkatkan kinerja. -->
+    <!-- referrerpolicy : mengontrol informasi yang dikirim ke server saat pengguna mengklik tautan atau berinteraksi dengan iframe. "no-referrer-when-downgrade" berarti tidak akan mengirimkan informasi referer jika pengguna berpindah dari HTTPS ke HTTP, menjaga privasi pengguna. -->
+    
+    <hr>
+
+    <h1>Contoh Entitas Karakter HTML</h1>
+    <p>Untuk menulis tag &lt;p&gt;, kita menggunakan entitas.</p>
+    
+    <p>Hak Cipta &copy; 2025. Dibuat dengan &hearts;.</p>
+    
+    <p>Jarak antara kata ini&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dan kata ini lebih jauh.</p>
+    <!-- nbsp: Non-Breaking Space -->
+</body>
+</html>
