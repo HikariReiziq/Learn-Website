@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bab 9: Block vs Inline</title>
+</head>
+<body>
+
+    <h1>Contoh Elemen Block</h1>
+    
+    <p style="background-color: lightblue;">Ini adalah paragraf (elemen block).</p>
+    <p style="background-color: lightgreen;">Ini paragraf kedua, juga elemen block, yang dimulai di baris baru.</p>
+
+    <hr>
+
+    <h1>Contoh Elemen Inline</h1>
+
+    <p style="background-color: #d5d5d56a;"> <!-- bisa warnanya diatur bebas-->
+        Ini adalah sebuah kalimat. Di tengah kalimat ini ada sebuah 
+        <a href="#" style="background-color: yellow;">link ini</a> 
+        (sebuah elemen inline). Dan ini adalah sisa kalimatnya.
+    </p>
+
+    <div style="background-color: tomato;">Ini adalah sebuah &lt;div&gt; (block).</div>
+    <p>Ini adalah sebuah <span style="background-color: violet;">&lt;span&gt; (inline)</span> di dalam paragraf.</p>
+
+</body>
+</html>
+
+<!-- 
+    Catatan:
+    - Elemen block seperti <p>, <div> dimulai di baris baru dan mengambil lebar penuh.
+    - Elemen inline seperti <a>, <span> tidak memulai di baris baru dan hanya mengambil ruang yang dibutuhkan.
