@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bab 8: Semantic HTML</title>
+</head>
+<body>
+
+    <header>
+        <h1>Ekspedisi Penemuan Pulau Aethelgard</h1>
+        
+        <nav> 
+            <ul>
+                <li><a href="#">Penemuan</a></li>
+                <li><a href="#">Data Ilmiah</a></li>
+                <li><a href="#">Galeri</a></li>
+                <li><a href="#">Bergabung</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <article>
+            <section>
+            <h2>Aethelgard: Permata yang Hilang</h2>
+            
+                <figure>
+                    <img src="https://image.idntimes.com/post/20220720/rsz-1rsz-wano-country-infobox-cropped-56965fbaa68adf470a17cc45ea5d328d-daf39c2352e5515638fc14f255618d0a.png?tr=w-640,f-webp,q-75&width=640&format=webp&quality=75" alt="Pulau Aethelgard">
+                    <figcaption>Pemandangan udara Pulau Aethelgard saat pertama kali ditemukan.</figcaption>
+                </figure>
+                    <p> Pulau Aethelgard ditemukan secara <span style="color:rebeccapurple; font-weight: bold;">tidak sengaja</span> oleh tim ekspedisi kami saat melakukan survei udara di wilayah Samudra Pasifik Selatan. Awalnya, radar kami menangkap anomali geografis yang tidak tercatat dalam peta manapun. Setelah mendarat dan menjelajahi wilayah tersebut, kami menyadari bahwa kami telah menemukan sebuah pulau yang belum pernah dijamah manusia sebelumnya. Lanskapnya terdiri dari hutan lebat, pantai berpasir putih, dan formasi batuan yang <span style="color: green; font-weight: bold;">menakjubkan</span>. Penemuan ini membuka peluang besar untuk penelitian ilmiah dan pelestarian ekosistem yang belum tersentuh.</p>
+            </section>
+            <hr>
+            <section>
+                <h2>Data & Fakta Pulau</h2>
+                <table border="1"style="width:100%; border-collapse: collapse;">
+                    <thead>
+                        <tr>
+                            <th>Kategori Data</th>
+                            <th>Informasi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Koordinat</td>
+                            <td>8° 15' LS, 115° 25' BT</td>
+                        </tr>
+                        <tr>
+                            <td>Suhu Rata-rata</td>
+                            <td>28°C</td>
+                        </tr>
+                        <tr>
+                            <td>Status</td>
+                            <td>Tidak Berpenghuni</td>
+                        </tr>
+                        <tr>
+                            <td>Ukuran</td>
+                            <td>50 km²</td>
+                    </tbody>
+                </table>
+            </section>
+            <br>
+            <hr>
+            <section>
+                <h2>Keanekaragaman Hayati</h2>
+                <p><b>Fauna Unik yang Ditemukan:</b></p>
+                <ul>
+                    <li>Kupu-kupu Kristal</li>
+                    <li>Kera Ekor Perak</li>
+                    <li>Burung Nada Senja</li>
+                </ul>
+                <p><b>Tumbuhan Langka yang Tercatat:</b></p>
+                <ol>
+                    <li>Anggrek Bulan Zamrud</li>
+                    <li>Pohon Kayu Bercahaya</li>
+                    <li>Jamur Langit</li>
+                </ol>
+            </section>
+            <hr>
+            <section>
+                <h2>Dokumentasi Ekspedisi </h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/XcLYW7Mwfrk?si=AeP6JcLI3gFitFXE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <br>
+                <audio controls loop>
+                <source src="../Assets/monkey.mp3" type="audio/mpeg">
+                Browser Anda tidak mendukung elemen audio ini.
+                </audio>
+            
+            </section>
+        </article>
+
+        <aside>
+            <h3>Ingin Bergabung dengan Ekspedisi Selanjutnya?</h3>
+            <form action="#" method="POST">
+        <fieldset style="width: fit-content;">
+            <legend>Informasi Pribadi</legend> 
+            <p>
+                <label for="username">Nama Lengkap</label><br>
+                <input type="text" id="username" name="username" placeholder="Reza Arap" required>
+            </p>
+            <p>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="user_email" placeholder="contoh@email.com" required>
+            </p>
+            <p>
+                <label for="peneliti">Keahlian:</label><br>
+                <input type="radio" id="peneliti" name="keahlian" value="peneliti">
+                <label for="peneliti">Peneliti</label><br>
+
+                <input type="radio" id="fotografer" name="keahlian" value="fotografer">
+                <label for="fotografer">Fotografer</label><br>
+
+                <input type="radio" id="medis" name="keahlian" value="medis">
+                <label for="medis">Medis</label><br>
+            </p>
+
+            <p>
+                <label for="pesan">Kontribusi yang bisa anda berikan:</label><br>
+                <textarea id="pesan" name="alasan" rows="3" cols="50"></textarea>
+            </p>
+        
+            <p>
+        
+                <input type="checkbox" id="setuju" name="syarat_persetujuan" value="setuju">
+                <label for="setuju">Saya setuju dengan semua syarat dan ketentuan.</label>
+            </p>
+            
+        <button type="submit">Gabung Sekarang</button>
+        <button type="reset">Reset Formulir</button>
+        </fieldset>
+    </form>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Tim Ekspedisi Nusantara. All Rights Reserved.</p>
+        <p>Menjelajah & Menjaga.</p>
+    </footer>
+
+</body>
+</html>
