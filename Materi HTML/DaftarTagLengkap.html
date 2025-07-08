@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Tag Teks HTML</title>
+    <style>
+        /* CSS sederhana agar lebih rapi */
+        body { 
+            font-family: sans-serif; 
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-wrap; /* Agar pre bisa di-wrap */
+        }
+        code {
+            background-color: #eee;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        blockquote {
+            border-left: 4px solid #ccc;
+            padding-left: 15px;
+            margin-left: 0;
+            font-style: italic;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Ini Judul Utama Halaman (H1)</h1>
+    <h2>Ini Sub-Judul Level 2 (H2)</h2>
+    <h3>Ini Sub-Judul Level 3 (H3)</h3>
+    <p>Gunakan H1 hanya sekali per halaman untuk judul utama. H2, H3, dst, untuk sub-bagian.</p>
+    
+    <hr> <p>
+        Ini adalah sebuah paragraf standar. Semua teks yang berada di dalam tag &lt;p&gt; akan dianggap sebagai satu kesatuan paragraf. Browser secara otomatis akan memberikan jarak (margin) sebelum dan sesudah paragraf.
+    </p>
+    <p>
+        Jika Anda ingin pindah baris<br>tanpa membuat paragraf baru, gunakan tag &lt;br&gt;.
+    </p>
+
+    <hr>
+
+    <h3>Contoh Formatting Teks</h3>
+    <p>
+        Ini adalah teks biasa. <br>
+        <b>Teks ini tebal (Bold)</b> - Hanya visual, tanpa penekanan khusus.<br>
+        <strong>Teks ini penting (Strong)</strong> - Tebal dan punya makna "penting" untuk SEO & screen reader.<br>
+        <i>Teks ini miring (Italic)</i> - Hanya visual.<br>
+        <em>Teks ini diberi penekanan (Emphasis)</em> - Miring dan punya makna "penekanan" secara semantik.<br>
+        <u>Teks ini bergaris bawah (Underline)</u> - Hindari penggunaan ini agar tidak dikira link.<br>
+        <s>Teks ini salah atau tidak relevan lagi (Strikethrough)</s>.<br>
+        <mark>Teks ini ditandai atau di-highlight</mark>.
+    </p>
+    
+    <hr>
+    
+    <h3>Contoh Kutipan</h3>
+    <p>Menurut W3C Schools, <q>HTML adalah bahasa markup standar untuk membuat halaman Web</q>.</p>
+    
+    <p>Berikut adalah kutipan yang lebih panjang dari sebuah buku:</p>
+    <blockquote>
+        Ini adalah blok kutipan yang panjang. Biasanya digunakan untuk mengutip beberapa kalimat atau paragraf dari sumber lain. Browser akan menampilkannya sedikit menjorok ke dalam.
+    </blockquote>
+    <p>Kutipan di atas diambil dari buku <cite>Belajar Web dari Nol</cite>.</p>
+
+    <hr>
+
+    <h3>Contoh Teks Terkait Kode</h3>
+    <p>
+        Untuk mencetak "Hello, World!" di Python, gunakan kode: <code>print("Hello, World!")</code>.
+    </p>
+    <p>Untuk blok kode yang lebih panjang, gunakan tag &lt;pre&gt;:</p>
+    <pre>
+function sapaDunia() {
+  console.log("Halo Dunia dari JavaScript!");
+}
+// Tag <pre> akan menjaga spasi dan enter
+// persis seperti saat diketik.
+    </pre>
+    <p>
+        Tekan <kbd>Ctrl</kbd> + <kbd>C</kbd> untuk menyalin teks.
+    </p>
+
+    <hr>
+    
+    <h3>Contoh Teks Semantik Lainnya</h3>
+    <p>
+        Rumus kimia air adalah H<sub>2</sub>O. (Subscript untuk teks ke bawah)<br>
+        Persamaan Einstein yang terkenal adalah E = mc<sup>2</sup>. (Superscript untuk teks ke atas)<br>
+        <small>Teks ini adalah teks kecil, biasa untuk copyright atau catatan kaki.</small><br>
+        HTML adalah singkatan dari <abbr title="HyperText Markup Language">HTML</abbr>. (Arahkan mouse ke HTML)<br>
+        <dfn>Website</dfn> adalah kumpulan halaman web yang saling terkait. (Untuk mendefinisikan istilah).
+    </p>
+    
+    <hr>
+    
+    <h3>Contoh Penggunaan &lt;span&gt;</h3>
+    <p>
+        Sebagian besar teks ini berwarna hitam, tapi kata <span style="color: rgb(99, 32, 32); font-weight: bold;">ini</span> diberi gaya khusus menggunakan CSS inline di dalam tag span.
+    </p>
+
+</body>
+</html>
