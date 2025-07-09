@@ -1,0 +1,81 @@
+/* Mengatur dasar untuk body agar konten lebih rapi */
+body {
+  font-family: sans-serif;
+  width: 80%; /* untuk */
+  margin: 40px auto; /* Trik untuk membuat seluruh konten di tengah halaman */
+  line-height: 1.6;
+}
+
+h1 {
+    border-bottom: 2px solid #eee;
+}
+
+/* ================================================== */
+/* --- Menata Gaya Link --- */
+/* ================================================== */
+
+/* :link menargetkan link yang belum pernah dikunjungi */
+a:link {
+  color: #1E90FF; /* Warna DodgerBlue */
+  font-weight: bold;
+  text-decoration: none; /* Menghilangkan garis bawah */
+}
+
+/* :visited menargetkan link yang sudah pernah diklik */
+a:visited {
+    color: #2be265; /* Warna green */
+}
+
+/* :hover menargetkan link saat mouse berada di atasnya */
+a:hover {
+  text-decoration: underline; /* Menambahkan garis bawah saat di-hover */
+}
+
+/* :active menargetkan link saat sedang ditekan/diklik */
+a:active {
+    color: #FF4500; /* Warna Orangered */
+}
+
+/* ================================================== */
+/* --- Menata Gaya List --- */
+/* ================================================== */
+
+/* Mengubah bullet point pada <ul> */
+ul {
+  list-style-type: square; /* Mengubah bullet point menjadi kotak */
+}
+
+/* Mengubah penomoran pada <ol> */
+ol {
+  list-style-type: upper-roman; /* Mengubah penomoran menjadi I, II, III */
+}
+
+/* ================================================== */
+/* --- Menata Gaya Tabel --- */
+/* ================================================== */
+
+table {
+  width: 100%; 
+  border-collapse: collapse; /* Menggabungkan border menjadi satu garis, ini penting! */
+  /* coba collapsenya ganti none biar tahu bedanya */
+  margin-top: 20px; 
+}
+
+/* Memberi gaya pada sel header (th) dan data (td) */
+th, td {
+  border: 1px solid #ccc; /* Memberi border abu-abu tipis */
+  padding: 12px; /* Memberi padding yang lega di dalam sel */
+  text-align: left; /* Membuat teks rata kiri */
+}
+
+/* Memberi warna latar pada baris header (thead) */
+thead {
+  background-color: #333;
+  color: white;
+}
+
+/* Membuat efek "zebra stripes" pada baris tabel */
+/* :nth-child(even) akan menargetkan setiap anak <tr> yang genap (ke-2, ke-4, dst.) */
+tbody tr:nth-child(even) {
+  background-color: #707577; /* Warna abu-abu sangat terang */
+}
