@@ -1,0 +1,54 @@
+/* soal a */
+body {
+  font-family: sans-serif; 
+  background-color: #f4f4f4; /
+}
+
+h1 {
+  color: #003366;
+}
+
+h2 {
+    color: #003366
+}
+/* soal b */
+
+header, footer {
+    background-color: #002147;
+    color: white;
+}
+
+a {
+    color: dodgerblue;
+    text-decoration: none;
+}
+/* soal c */
+header a , footer a {
+    color: white;
+}
+
+/* soal d */
+.info-box{
+    background-color: white;
+    border: 1px solid #ddd;
+}
+/* kalau class pakai .form-pendaftaran */
+/* kalau id pakai #form-pendaftaran */
+#form-pendaftaran{ 
+    background-color: #eaf2f8;
+    padding: 20px solid #ddd;
+}
+
+/* Soal E */
+.tombol-utama {
+    background-color: seagreen; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tombol-utama:hover {
+    background-color: darkgreen; 
+}
