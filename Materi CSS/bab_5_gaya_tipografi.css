@@ -1,0 +1,54 @@
+/* File 2: gaya_tipografi.css */
+
+/* ======================================== */
+/* Bab 5: CSS Typography (Tipografi)      */
+/* ======================================== */
+
+/* Mengubah font dasar body untuk memberikan kesan lebih klasik */
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  /* Mengapa Times New Roman ada tanda kutip sendiri? Karena dia lebih dari 1 kata.:) */
+  line-height: 1.6; /* Memberi jarak antar baris agar lebih nyaman dibaca */
+  color: #333;
+}
+
+/* Mengatur gaya judul utama agar lebih menonjol */
+h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Menggunakan font yang berbeda */
+  font-size: 2.5em; /* Ukuran 2.5x lebih besar dari font dasar body */
+  text-align: center; /* Membuat judul rata tengah */
+  font-weight: strong; /* Membuat font tidak terlalu tebal,bisa diganti normal */
+  letter-spacing: 1px; /* Memberi sedikit jarak antar huruf */
+  color: navy;
+}
+
+/* Menggunakan font yang berbeda untuk sub-judul agar ada kontras */
+h2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(19, 235, 214);
+}
+
+/* Mengatur paragraf agar rapi seperti di koran */
+p {
+  text-align: justify; /* Membuat teks rata di sisi kiri dan kanan */
+}
+
+/* Menghilangkan garis bawah pada link di navigasi utama */
+nav a {
+  text-decoration: none; /* Menghilangkan underline */
+  font-weight: bold; /* Membuat teksnya tebal */
+  color: #1E90FF; /* Warna DodgerBlue */
+  padding: 0 10px; /* Memberi jarak antar link */
+}
+
+/* Menambahkan kembali garis bawah saat mouse diarahkan ke link navigasi */
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Memberi gaya pada wadah navigasi */
+nav {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 10px;
+}
