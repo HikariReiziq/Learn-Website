@@ -1,0 +1,46 @@
+/* Mengatur gaya dasar untuk seluruh halaman */
+body {
+  font-family: Arial, sans-serif; /* Menggunakan font Arial sebagai font utama */
+  /* kenapa ada dua value? Sans-serif sebagai cadangan jika Arial tidak tersedia */
+  background-color: #f0f8ff; /* Warna AliceBlue, sangat terang */
+}
+
+/* Memberi gaya pada header */
+header {
+  background-color: #4682B4; /* Warna SteelBlue (HEX Code) */
+  color: white; /* Nama Warna */
+  padding: 1px;
+  text-align: center;
+}
+
+/* Memberi gaya pada paragraf di dalam <main> */
+main p {
+  color: rgb(6, 207, 214); /* Warna cyan tapi RGB */
+  font-size: 16px;
+}
+
+/* Memberi gaya pada tombol dengan class 'tombol-aksi' */
+.tombol-aksi {
+  background-color: #FF6347; /* Warna Tomato (HEX Code) */
+  color: white;
+  padding: 10px 15px; /* Padding atas-bawah 10px, kiri-kanan 15px */
+  border: crimson; /* Warna border */
+  border-radius: 10px; /* Membuat sudut tombol melengkung */
+  cursor: pointer; /* Mengubah kursor menjadi pointer saat hover */
+  font-size: 16px; /* Ukuran font tombol */
+}
+
+/* Memberi efek saat mouse diarahkan ke tombol */
+.tombol-aksi:hover {
+  color: black; /* Mengubah warna teks menjadi hitam saat hover */
+  background-color: #12fa34; /* Warna Tomato sedikit lebih gelap */
+}
+
+/* Memberi gaya pada footer */
+footer {
+  background-color: #333; /* Warna abu-abu gelap */
+  color: #ccc; /* Warna abu-abu terang */
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
