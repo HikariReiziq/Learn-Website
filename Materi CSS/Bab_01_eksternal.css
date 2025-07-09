@@ -1,0 +1,9 @@
+/* Ini adalah file CSS eksternal.
+  Perhatikan sintaksnya: selector { property: value; }
+*/
+
+p {
+  color: navy;
+  font-size: 18px;
+  font-family: comic sans ms;
+}

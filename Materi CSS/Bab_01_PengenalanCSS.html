@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bab 1: Cara Menambahkan CSS</title>
+
+    <style>
+        h2 { 
+            /* bisa diatur inline spesifik mana yang mau diwarnai */
+            color: green;
+            text-decoration: underline;
+        }
+    </style>
+
+    <link rel="stylesheet" href="Bab_01_eksternal.css">
+
+</head>
+<body>
+
+    <h1 style="color: red; text-align: center;">Ini Judul dengan Inline CSS</h1>
+
+    <h2>Ini Sub-Judul dengan Internal CSS</h2>
+
+    <p>Paragraf ini akan diberi gaya oleh file CSS eksternal. Perhatikan bahwa kode gayanya tidak ada di file HTML ini sama sekali, melainkan di file 'gaya.css'.</p>
+
+</body>
+</html>
+
+<!-- inti dari ketiga metode style tersebut:
+
+Inline: Untuk satu elemen spesifik.
+
+Internal: Untuk satu halaman spesifik.
+
+External: Untuk seluruh website (cara terbaik dan paling rapi). -->

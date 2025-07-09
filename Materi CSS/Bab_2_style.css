@@ -1,0 +1,69 @@
+/* Buku Panduan Desain */
+/* Bab 2: CSS Selectors */
+/* File: style.css */
+
+/* 1. Element Selector (Selektor Elemen/Tag) */
+/* Fungsi: Menargetkan SEMUA elemen dengan nama tag yang sama.
+  Sintaks: Cukup tulis nama tag-nya.
+*/
+
+/* Memberi gaya pada seluruh halaman */
+body {
+  font-family: comic sans ms; /* Mengubah jenis font default */
+  color: #333; /* Mengubah warna teks default menjadi abu-abu tua */
+}
+
+/* Membuat semua judul utama menjadi warna biru laut */
+h1 {
+  color: navy;
+}
+
+/* Membuat semua sub-judul h2 memiliki garis bawah */
+h2 {
+  border-bottom: 3px solid #eee; /* Membuat garis bawah tipis berwarna abu-abu */
+  padding-bottom: 5px; /* Memberi sedikit jarak antara teks dan garis */
+}
+
+
+/* 2. Class Selector (Selektor Class) */
+/* Fungsi: Menargetkan semua elemen yang memiliki atribut class="nama-class-tertentu".
+  Sintaks: Diawali dengan titik (.), diikuti nama class.
+  Kelebihan: Bisa digunakan berulang kali pada banyak elemen.
+*/
+
+/* Kita akan membuat class bernama 'highlight-text' */
+.highlight-text {
+  color : chocolate; /* Warna ungu yang menarik */
+  background-color: #FFF8DC; /* Warna kuning jagung yang lembut */
+  padding:  2px 25px; /* Memberi sedikit ruang di sekitar teks */
+  border-radius: 10px; /* Membuat sudutnya sedikit melengkung */
+  border: 1px solid #e0c080; /* Menambah border agar lengkung terlihat */
+}
+
+
+/* 3. ID Selector (Selektor ID) */
+/*
+  Fungsi: Menargetkan SATU elemen unik yang memiliki atribut id="nama-id-tertentu".
+  Sintaks: Diawali dengan pagar (#), diikuti nama ID.
+  Aturan: Sebuah ID harus unik, tidak boleh ada ID yang sama di satu halaman.
+*/
+
+/* Kita akan menargetkan form pendaftaran */
+#username { 
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  padding: 3px;
+  border-radius: 10px; /* Membuat sudutnya sedikit melengkung */
+  width: 200px; /* Lebar input */
+  border : 1px solid #dbe080; /* Menambah border agar lengkung terlihat */
+}
+
+#formulir-bergabung {
+  background-color: #f9f9f9;
+  border: 10px solid #ddd;
+  padding: 20px;
+  border-radius: 10px; /* Membuat sudutnya sedikit melengkung */
+  width: 500px; /* Lebar aside */
+
+}
+
