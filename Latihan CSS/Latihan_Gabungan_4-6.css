@@ -1,0 +1,78 @@
+/* Soal A */
+body {
+  font-family: sans-serif;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #2c3e50;
+}
+
+header p{
+    color:#7f8c8d;
+}
+
+/* Soal B */
+.pricing-table-container{
+    margin: 50px auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    /*  */
+}
+
+/* soal C */
+th, td{
+    padding: 20px;
+    border: 1px solid #dee2e6;
+}
+
+thead th{
+    background-color: white;
+}
+
+.price{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.price-period{
+    font-size: 0.7em;
+    color:#7f8c8d ;
+}
+
+/* Soal D */
+
+table a {
+    text-decoration: none;
+}
+
+.button{
+    background-color: #3498db;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.button:hover{
+    background-color: #2980b9;
+}
+
+/* Soal E */
+.best-value{
+    background-color: #eaf2f8;
+}
+
+.button-best-value{
+ background-color: #2ecc71 ;
+}
+
+.button-best-value:hover{
+    background-color: #27ae60;
+}
