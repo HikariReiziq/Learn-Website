@@ -1,0 +1,46 @@
+/* File 2: Bab_07_Display_Property.css */
+
+body {
+    font-family: sans-serif;
+    width: 80%;
+    margin: 40px auto;
+}
+
+hr {
+    margin: 30px 0;
+}
+
+/* Gaya dasar untuk semua kotak agar mudah dilihat */
+.box {
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+}
+
+/* --- CONTOH DISPLAY --- */
+
+.block-box {
+    display: block; /* Ini adalah nilai default untuk <div> */
+    background-color: #8E44AD; /* Ungu */
+    margin-bottom: 10px;
+}
+
+.inline-box {
+    display: inline; /* Ini adalah nilai default untuk <span> */
+    background-color: #27AE60; /* Hijau */
+    width: 200px; /* PERHATIKAN: Perintah ini akan DIABAIKAN */
+    height: 100px; /* PERHATIKAN: Perintah ini juga DIABAIKAN */
+}
+
+.inline-block-box {
+    display: inline-block; /* Sifat hybrid! */
+    background-color: #E67E22; /* Oranye */
+    width: 200px; /* PERHATIKAN: Perintah ini akan DIIKUTI */
+    height: 80px; /* PERHATIKAN: Perintah ini juga DIIKUTI */
+    margin: 5px;
+}
+
+.elemen-tersembunyi {
+    display: none; /* Elemen ini akan hilang sepenuhnya */
+    background-color: red;
+}

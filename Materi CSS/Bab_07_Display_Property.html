@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bab 7: Properti Display</title>
+    
+    <!-- Menghubungkan ke file CSS -->
+    <link rel="stylesheet" href="Bab_07_Display_Property.css">
+</head>
+<body>
+
+    <h1>Properti <code>display</code></h1>
+
+    <h2>display: block</h2>
+    <p>Setiap elemen <code>&lt;div&gt;</code> di bawah ini adalah elemen block. Perhatikan bagaimana mereka selalu memulai baris baru.</p>
+    <div class="box block-box">Block 1</div>
+    <div class="box block-box">Block 2</div>
+
+    <hr>
+
+    <h2>display: inline</h2>
+    <p>
+        Elemen <code>&lt;span&gt;</code> di bawah ini adalah elemen inline. 
+        <span class="box inline-box">Inline 1</span>
+        <span class="box inline-box">Inline 2</span>
+        Mereka mengalir bersama teks dan tidak memulai baris baru. Perintah `width` dan `height` pada mereka akan diabaikan.
+    </p>
+
+    <hr>
+
+    <h2>display: inline-block</h2>
+    <p>Elemen di bawah ini diberi <code>display: inline-block</code>. Mereka berjajar ke samping seperti inline, tapi kita bisa mengatur lebar dan tingginya seperti block.</p>
+    <div class="box inline-block-box">Inline-Block 1</div>
+    <div class="box inline-block-box">Inline-Block 2</div>
+    <div class="box inline-block-box">Inline-Block 3</div>
+
+    <hr>
+
+    <h2>display: none</h2>
+    <p>Ada sebuah kotak di antara "Kotak A" dan "Kotak C", tapi ia diberi <code>display: none</code> sehingga benar-benar hilang.</p>
+    <div class="box">Kotak A</div>
+    <div class="box elemen-tersembunyi">Kotak B (Tersembunyi)</div>
+    <div class="box">Kotak C</div>
+
+</body>
+</html>
