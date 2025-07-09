@@ -1,0 +1,48 @@
+/* Bab 4: CSS Box Model (Model Kotak CSS)
+Setiap elemen HTML di halaman Anda pada dasarnya adalah sebuah kotak persegi panjang. "Box Model" adalah aturan yang mendefinisikan bagaimana ukuran kotak tersebut dihitung, yang terdiri dari empat lapisan:
+
+Content (Konten): Area inti tempat teks dan gambar Anda muncul.
+
+Padding (Bantalan): Ruang transparan di dalam kotak, di antara konten dan garis batas.
+
+Border (Garis Batas): Garis yang mengelilingi padding dan konten.
+
+Margin (Margin): Ruang transparan di luar kotak, yang mendorong elemen lain menjauh. */
+
+/* Mengatur dasar untuk body agar konten tidak terlalu mepet ke tepi layar */
+body {
+  font-family: sans-serif;
+  padding: 20px; /* Memberi sedikit ruang di sekeliling halaman */
+}
+
+.kotak-satu {
+  /* 1. CONTENT (Konten) */
+  /* Kontennya adalah tag <p> yang ada di dalam file HTML. */
+  
+  /* 2. PADDING (Bantalan) */
+  /* Ruang di DALAM kotak, antara konten dan garis batas (border). */
+  /* Ini seperti memberi bantalan di dalam kotak. */
+  padding: 25px; 
+
+  /* 3. BORDER (Garis Batas) */
+  /* Garis yang mengelilingi padding dan konten. */
+  /* Ini adalah bingkai dari kotak kita. */
+  border: 10px solid steelblue; /* Garis biru tebal 10px */
+
+  /* 4. MARGIN (Margin) */
+  /* Ruang di LUAR kotak, untuk mendorong elemen lain. */
+  /* Kita akan lihat efeknya pada .kotak-dua */
+  
+  background-color: lightcyan; /* Warna latar untuk area konten + padding */
+}
+
+.kotak-dua {
+  /* Kita beri margin-top pada kotak ini */
+  /* Ini akan menciptakan ruang kosong di atas .kotak-dua, */
+  /* mendorongnya menjauh dari .kotak-satu. */
+  margin-top: 50px; 
+  
+  padding: 25px;
+  border: 10px solid firebrick; /* Warna merah bata */
+  background-color: mistyrose;
+}
