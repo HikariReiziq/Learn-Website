@@ -1,0 +1,63 @@
+/* Mengatur dasar untuk body */
+body {
+  font-family: sans-serif;
+  color: #333;
+}
+
+/* Mengatur font-size dasar untuk elemen root (<html>). */
+/* Ini akan menjadi acuan untuk satuan 'rem'. Defaultnya adalah 16px. */
+html {
+    font-size: 18px;
+}
+
+section, .parent-font-size {
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+h2 {
+    margin-top: 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* --- CONTOH SATUAN --- */
+
+.unit-px {
+    width: 200px; /* Lebar tetap 200px */
+    background-color: #E8DAEF; /* Ungu muda */
+}
+
+.unit-percentage {
+    width: 50%; /* Lebar 50% dari lebar body */
+    background-color: #D5F5E3; /* Hijau muda */
+}
+
+.parent-font-size {
+    font-size: 20px; /* Mengatur font-size parent untuk demo 'em' */
+    background-color: #f1f1f1;
+}
+
+.unit-em p {
+    font-size: 1.5em; /* 1.5 x 20px (parent) = 30px */
+    color: #8E44AD; /* Ungu */
+}
+
+.unit-rem p {
+    font-size: 2rem; /* 2 x 18px (root) = 36px */
+    color: #16A085; /* Hijau toska */
+}
+
+.unit-viewport {
+    width: 100vw; /* 100% dari lebar jendela */
+    height: 50vh; /* 50% dari tinggi jendela */
+    background-color: #FADBD8; /* Merah muda */
+    
+    /* Trik untuk menggeser agar pas dengan layar */
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}

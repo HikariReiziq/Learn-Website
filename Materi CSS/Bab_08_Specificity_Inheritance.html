@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bab 8: Specificity & Inheritance</title>
+    
+    <link rel="stylesheet" href="Bab_08_Specificity_Inheritance.css">
+</head>
+<body class="konten-utama">
+    <h1>Judul Ini Mewarisi Warna dari Body</h1>
+
+    <p class="paragraf-spesial" id="paragraf-unik" style="font-size: 25px;">
+        Paragraf ini ditargetkan oleh empat aturan berbeda. Perhatikan warna mana yang akhirnya menang.
+    </p>
+
+    <p>Paragraf ini akan berwarna merah karena aturan !important.</p>
+
+</body>
+</html>
+
+<!-- 3. Aturan !important
+Konsep: Ini adalah "kartu truf" atau "opsi nuklir" dalam CSS. Menambahkan !important pada sebuah properti 
+akan membuatnya mengalahkan semua aturan spesifisitas lainnya, bahkan inline style sekalipun. -->

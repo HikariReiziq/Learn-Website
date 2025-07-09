@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bab 9: Satuan Ukuran CSS</title>
+    
+    <link rel="stylesheet" href="Bab_09_Satuan_Units.css">
+</head>
+<body>
+
+    <section class="unit-px">
+        <h2>Satuan Absolut: <code>px</code></h2>
+        <p>Lebar kotak ini diatur menjadi <strong>200px</strong>. Ukurannya akan selalu tetap.</p>
+    </section>
+
+    <section class="unit-percentage">
+        <h2>Satuan Relatif: <code>%</code></h2>
+        <p>Lebar kotak ini diatur menjadi <strong>50%</strong>. Coba ubah ukuran jendela browser Anda, lebarnya akan ikut berubah karena relatif terhadap lebar halaman.</p>
+    </section>
+
+    <div class="parent-font-size">
+        <p>Parent ini punya font-size: 20px.</p>
+
+        <section class="unit-em">
+            <h2>Satuan Relatif: <code>em</code></h2>
+            <p>Font-size paragraf ini adalah <strong>1.5em</strong>. Karena parent-nya 20px, maka ukurannya menjadi 30px (1.5 * 20).</p>
+        </section>
+
+        <section class="unit-rem">
+            <h2>Satuan Relatif: <code>rem</code></h2>
+            <p>Font-size paragraf ini adalah <strong>1.5rem</strong>. Ia mengabaikan parent (20px) dan mengacu pada root (default 16px), sehingga ukurannya menjadi 24px (1.5 * 16).</p>
+        </section>
+    </div>
+
+    <section class="unit-viewport">
+        <h2>Satuan Viewport: <code>vw</code> dan <code>vh</code></h2>
+        <p>Tinggi kotak ini adalah <strong>50vh</strong> (50% dari tinggi jendela browser) dan lebarnya <strong>100vw</strong> (100% dari lebar jendela browser).</p>
+    </section>
+
+</body>
+</html>

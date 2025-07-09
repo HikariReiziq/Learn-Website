@@ -1,0 +1,54 @@
+/* File 2: Bab_08_Specificity_Inheritance.css */
+
+/* 1. Inheritance (Pewarisan) */
+body {
+    font-family: sans-serif;
+    color: navy; /* Semua elemen teks anak akan mewarisi warna ini */
+}
+
+/* ======================================================= */
+
+/* 2. Specificity (Spesifisitas) */
+
+/* Aturan 1: Element Selector (Paling Lemah) */
+p {
+    color: green;
+}
+
+/* Aturan 2: Class Selector (Lebih Kuat dari Elemen) */
+.paragraf-spesial {
+    color: orange;
+}
+
+/* Aturan 3: ID Selector (Lebih Kuat dari Class) */
+#paragraf-unik {
+    color: blue;
+}
+
+/* Hasil Akhir:
+   Paragraf pertama akan berwarna BIRU, karena aturan ID (#paragraf-unik)
+   memiliki spesifisitas paling tinggi dan mengalahkan aturan Class dan Elemen.
+   Aturan Inline Style (font-size: 25px) juga akan menang karena lebih spesifik.
+*/
+
+/* ======================================================= */
+
+/* 3. Aturan !important */
+
+/* Aturan ini menargetkan semua paragraf */
+/* p {
+    color: purple !important; 
+} */
+/* Nilai ini (!important) akan MENGALAHKAN SEMUANYA */
+
+
+/* Aturan ID yang tadinya menang, sekarang akan KALAH */
+#paragraf-unik {
+    color: blue;
+}
+
+/*
+  HASIL AKHIR SETELAH ADA !IMPORTANT:
+  SEMUA paragraf di halaman ini, termasuk yang punya ID dan Class,
+  akan dipaksa berwarna UNGU (purple) karena aturan !important.
+*/
