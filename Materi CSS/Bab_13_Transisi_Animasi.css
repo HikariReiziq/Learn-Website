@@ -1,0 +1,82 @@
+
+body {
+    font-family: sans-serif;
+    text-align: center;
+    padding-top: 50px;
+}
+
+hr {
+    margin: 60px auto;
+    width: 80%;
+}
+
+/* ======================================== */
+/* --- Contoh 1: Transisi CSS --- */
+/* ======================================== */
+
+.tombol-transisi {
+    background-color: #3498db; /* Biru */
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    cursor: pointer;
+
+    /* INI BAGIAN PENTINGNYA */
+    /* Kita memberitahu browser:
+       "Animasikan perubahan pada properti 'background-color' dan 'transform'
+        selama 0.3 detik dengan gaya 'ease'."
+    */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Saat mouse diarahkan ke tombol... */
+.tombol-transisi:hover {
+    background-color: #2980b9; /* Warna biru lebih gelap */
+    /* 'transform: scale(1.1)' akan memperbesar tombol sedikit */
+    transform: scale(1.1); 
+}
+
+/* ======================================== */
+/* --- Contoh 2: Animasi CSS --- */
+/* ======================================== */
+
+.kotak-animasi {
+    width: 100px;
+    height: 100px;
+    background-color: #9b59b6; /* Ungu */
+    border-radius: 12px;
+    margin: 40px auto; /* Membuat kotak di tengah */
+
+    /* INI BAGIAN PENTINGNYA */
+    /* Terapkan animasi yang sudah kita definisikan di bawah */
+    /* Nama animasi: 'ganti-warna-dan-putar' */
+    /* Durasi: 4 detik */
+    /* Timing: 'ease-in-out' */
+    /* Iterasi: 'infinite' (berulang tanpa henti) */
+    animation: ganti-warna-dan-putar 4s ease-in-out infinite;
+}
+
+/* Mendefinisikan "adegan-adegan kunci" untuk animasi */
+/* Nama animasi ini adalah 'ganti-warna-dan-putar' */
+@keyframes ganti-warna-dan-putar {
+    /* Keadaan awal (0% durasi) */
+    0% {
+        background-color: #9b59b6; /* Ungu */
+        transform: rotate(0deg) scale(1);
+    }
+
+    /* Keadaan di tengah-tengah (50% durasi) */
+    50% {
+        background-color: #e67e22; /* Oranye */
+        transform: rotate(180deg) scale(1.2); /* Berputar dan membesar */
+        border-radius: 50%; /* Berubah menjadi lingkaran */
+    }
+
+    /* Keadaan akhir (100% durasi), kembali ke awal */
+    100% {
+        background-color: #9b59b6; /* Ungu */
+        transform: rotate(360deg) scale(1);
+    }
+}

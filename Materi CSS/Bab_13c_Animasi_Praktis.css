@@ -1,0 +1,135 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f7f9;
+    color: #333;
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+section {
+    background-color: white;
+    padding: 30px;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+    max-width: 700px;
+}
+
+h2 {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 15px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* ======================================== */
+/* --- Definisi @keyframes --- */
+/* ======================================== */
+
+/* Animasi untuk efek fade-in dan slide-up */
+@keyframes fadeIn-slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animasi untuk tombol berdenyut */
+@keyframes pulse {
+    0%   { transform: scale(1); box-shadow: 0 0 0 0 rgba(41, 128, 185, 0.7); }
+    70%  { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(41, 128, 185, 0); }
+    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(41, 128, 185, 0); }
+}
+
+/* Animasi untuk ikon bergetar */
+@keyframes shake {
+    0%, 100% { transform: rotate(0deg); }
+    10%, 30%, 50%, 70%, 90% { transform: rotate(-10deg); }
+    20%, 40%, 60%, 80% { transform: rotate(10deg); }
+}
+
+/* Animasi untuk spinner loading */
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Animasi untuk efek ketikan */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: orange; }
+}
+
+
+/* ======================================== */
+/* --- Penerapan Animasi --- */
+/* ======================================== */
+
+/* 1. Kartu dengan Efek Muncul */
+.kartu.efek-muncul {
+    animation: fadeIn-slideUp 1s ease-out forwards;
+}
+
+/* 2. Tombol Berdenyut */
+.tombol.efek-denyut {
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 0 0 0 rgba(41, 128, 185, 1);
+    animation: pulse 2s infinite;
+}
+
+/* 3. Ikon Notifikasi Bergetar */
+.wadah-ikon {
+    display: inline-block;
+}
+.ikon-lonceng {
+    fill: #f39c12; /* Warna oranye */
+    cursor: pointer;
+}
+.wadah-ikon:hover .ikon-lonceng {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+/* 4. Spinner Loading */
+.spinner {
+    width: 50px;
+    height: 50px;
+    margin: 20px auto;
+    border: 5px solid #f3f3f3; /* Lingkaran abu-abu */
+    border-top: 5px solid #3498db; /* Bagian biru yang berputar */
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+/* 5. Efek Ketikan */
+.wadah-ketik {
+    display: inline-block;
+}
+.efek-ketik {
+    overflow: hidden; /* Sembunyikan teks yang belum "diketik" */
+    border-right: .15em solid orange; /* Kursor ketik */
+    white-space: nowrap; /* Pastikan teks tidak pindah baris */
+    margin: 0 auto;
+    letter-spacing: .1em;
+    animation: 
+        typing 3.5s steps(30, end),
+        blink-caret .75s step-end infinite;
+}
