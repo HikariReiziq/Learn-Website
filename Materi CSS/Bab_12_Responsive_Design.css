@@ -1,0 +1,62 @@
+/* --- Gaya Dasar (Mobile First) --- */
+/* Kita mendesain untuk layar kecil terlebih dahulu */
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 0;
+}
+
+header, footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.main-content {
+    background-color: #ecf0f1;
+    padding: 20px;
+}
+
+.sidebar {
+    background-color: #95a5a6;
+    color: white;
+    padding: 20px;
+}
+
+/* ================================================== */
+/* --- INI BAGIAN UTAMA: MEDIA QUERY --- */
+/* ================================================== */
+
+/* @media (min-width: 768px) { ... }
+  
+  Ini adalah perintah "JIKA".
+  Artinya: JIKA lebar viewport (jendela browser) MINIMAL 768px atau lebih,
+  MAKA terapkan semua gaya yang ada di dalam kurung kurawal ini.
+
+  Angka 768px adalah "breakpoint" (titik henti) yang umum untuk tablet.
+*/
+
+@media (min-width: 768px) {
+    
+    /* Saat layar lebar, ubah wadah menjadi Flexbox */
+    .container {
+        display: flex;
+    }
+
+    /* Buat konten utama mengisi sisa ruang */
+    .main-content {
+        flex: 1; 
+    }
+
+    /* Beri lebar tetap pada sidebar */
+    .sidebar {
+        width: 300px;
+    }
+
+    /* Beri judul yang lebih besar di layar desktop */
+    h1 {
+        font-size: 3em;
+    }
+}
