@@ -1,0 +1,63 @@
+/* File 2: Bab_11_Layout_Grid.css */
+
+/* Mengatur dasar agar tidak ada spasi yang mengganggu */
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* Gaya dasar untuk setiap item grid agar terlihat jelas */
+.grid-item {
+    color: rgb(153, 68, 68);
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/* Memberi warna berbeda pada setiap item */
+.header { background-color: #1abc9c; }
+.nav    { background-color: #3498db; }
+.main   { background-color: #9b59b6; }
+.aside  { background-color: #34495e; }
+.footer { background-color: #e67e22; }
+
+/* ======================================== */
+/* --- INI BAGIAN UTAMA DARI CSS GRID --- */
+/* ======================================== */
+
+.grid-container {
+    /* 1. "Aktifkan" Grid pada wadah */
+    display: grid;
+
+    /* 2. Mendefinisikan kolom */
+    /* '1fr 3fr' berarti buat 2 kolom. Kolom kedua 3x lebih lebar dari kolom pertama.
+       'fr' adalah satuan 'fraction' (fraksi) yang fleksibel. */
+    grid-template-columns: 1fr 3fr; 
+
+    /* 3. Mendefinisikan baris */
+    /* 'auto' berarti tinggi baris akan menyesuaikan dengan kontennya. */
+    grid-template-rows: auto auto 1fr auto;
+    /* Baris 1: header, Baris 2: nav, Baris 3: main/aside, Baris 4: footer */
+
+    /* 4. Memberi jarak (gap) antar item grid */
+    gap: 10px;
+
+    /* 5. Mengatur tinggi minimum agar memenuhi layar */
+    min-height: 100vh;
+
+    /* 6. CARA PALING INTUITIF: Mendefinisikan area layout */
+    /* Kita membuat "peta" visual dari layout yang kita inginkan. */
+    grid-template-areas: 
+        "header header"
+        "nav    nav"
+        "aside  main"
+        "footer footer";
+}
+
+/* 7. Menempatkan setiap item ke dalam area yang sudah didefinisikan */
+.header { grid-area: header; }
+.nav    { grid-area: nav; }
+.main   { grid-area: main; }
+.aside  { grid-area: aside; }
+.footer { grid-area: footer; }
+

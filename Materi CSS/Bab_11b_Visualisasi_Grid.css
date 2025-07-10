@@ -1,0 +1,48 @@
+body {
+    font-family: sans-serif;
+}
+
+.grid-item {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/* Memberi warna berbeda agar mudah dibedakan */
+.item-1 { background-color: #16a085; }
+.item-2 { background-color: #27ae60; }
+.item-3 { background-color: #2980b9; }
+.item-4 { background-color: #8e44ad; }
+.item-5 { background-color: #f39c12; }
+.item-6 { background-color: #d35400; }
+
+
+/* ======================================== */
+/* --- INI BAGIAN UTAMA DARI CSS GRID --- */
+/* ======================================== */
+
+.grid-container {
+    display: grid;
+    gap: 15px; /* Memberi jarak antar sel */
+    
+    /* Mendefinisikan KOLOM (mengatur LEBAR)
+      
+      '200px 1fr 150px' berarti:
+      - Buat 3 kolom.
+      - Kolom pertama memiliki lebar TETAP 200px.
+      - Kolom kedua (1fr) akan FLEKSIBEL dan mengisi sisa ruang yang tersedia.
+      - Kolom ketiga memiliki lebar TETAP 150px.
+    */
+    grid-template-columns: 200px 1fr 150px;
+
+    /*
+      Mendefinisikan BARIS (mengatur TINGGI)
+
+      '100px 200px' berarti:
+      - Buat 2 baris.
+      - Baris pertama memiliki tinggi TETAP 100px.
+      - Baris kedua memiliki tinggi TETAP 200px.
+    */
+    grid-template-rows: 100px 200px;
+}
