@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan CSS: Dasbor Profil</title>
+    
+    <!-- Hubungkan ke file CSS Anda -->
+    <link rel="stylesheet" href="Latihan_Gabungan_7-10.css">
+</head>
+<body>
+
+    <!-- Ini adalah wadah utama untuk layout Flexbox kita -->
+    <div class="dashboard-container">
+
+        <!-- Kolom Sidebar Navigasi -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Dasbor</h2>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-link active">Profil</a>
+                <a href="#" class="nav-link">Analitik</a>
+                <a href="#" class="nav-link">Notifikasi <span class="badge">3</span></a>
+                <a href="#" class="nav-link">Pengaturan</a>
+            </nav>
+        </aside>
+
+        <!-- Kolom Konten Utama -->
+        <main class="main-content">
+            <header class="main-header">
+                <h1>Selamat Datang Kembali, Hikari!</h1>
+                <p>Berikut adalah ringkasan aktivitas Anda.</p>
+            </header>
+
+            <!-- Wadah untuk kartu statistik -->
+            <div class="stats-cards">
+                <div class="card">
+                    <h3>Pengikut</h3>
+                    <p class="stat-number">1,204</p>
+                </div>
+                <div class="card" id="card-utama">
+                    <h3>Proyek Selesai</h3>
+                    <p class="stat-number">78</p>
+                </div>
+                <div class="card">
+                    <h3>Artikel Diterbitkan</h3>
+                    <p class="stat-number">15</p>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+</body>
+</html>

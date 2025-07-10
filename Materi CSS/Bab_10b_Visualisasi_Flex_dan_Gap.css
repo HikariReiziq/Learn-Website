@@ -1,0 +1,34 @@
+body {
+    font-family: sans-serif;
+    width: 80%;
+    margin: 40px auto;
+}
+
+hr {
+    margin: 40px 0;
+}
+
+.wadah {
+    border: 3px dashed #ccc;
+    padding: 10px;
+}
+
+.kotak {
+    background-color: #3498db;
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 30px;
+    text-align: center;
+}
+
+/* --- INI BAGIAN PENTINGNYA --- */
+
+/* Menambahkan class ini akan mengaktifkan "sihir" Flexbox */
+.wadah-flex {
+    /* 1. Mengubah wadah menjadi Flex Container */
+    display: flex;
+
+    /* 2. Memberi jarak 10px antar setiap kotak di dalamnya */
+    gap: 10px;
+}

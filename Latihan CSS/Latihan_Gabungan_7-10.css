@@ -1,0 +1,85 @@
+/* soal A */
+html {
+    font-size: 16px;
+}
+/* Buat jadi 1 rem */
+
+body {
+    font-family: sans-serif;
+    background-color: #f4f7fa;
+    margin : 0;
+}
+
+h1, h2, h3{
+    margin: 0;
+}
+
+/* Soal B */
+.dashboard-container{
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar{
+    width: 250px;
+    background-color: #2c3e50 ;
+}
+
+.main-content{
+    flex: 1;
+    padding: 40px;
+}
+
+/* soal C */
+.sidebar-header{
+    padding: 20px;
+    color: white;
+}
+
+.nav-link{
+    padding: 15px 20px;
+    color: #bdc3c7;
+    display: block;
+}
+
+.nav-link:hover{
+    background-color:#34495e ;
+    color: white;
+}
+
+.active{
+    background-color:#34495e ;
+    color: white;
+}
+
+.badge{
+    background-color:#e74c3c;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 0.8rem; 
+    display: inline-block;
+}
+
+/* soal D */
+.stats-cards{
+    display: flex;
+    gap: 20px
+}
+.card{
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex: 1;
+}
+
+.stat-number{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#card-utama{
+    background-color: #3498db;
+    color: white;
+}
