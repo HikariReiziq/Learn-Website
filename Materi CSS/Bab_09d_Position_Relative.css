@@ -1,0 +1,39 @@
+    body {
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+.box {
+    width: 200px;
+    height: 100px;
+    background-color: #3498db; /* Biru */
+    color: white;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+/* Ini adalah 'wadah hantu' yang akan kita gunakan untuk menandai 
+  posisi ASLI dari Kotak 2 sebelum digeser.
+*/
+.wadah-hantu {
+    border: 2px dashed #ccc; /* Garis putus-putus abu-abu */
+    height: 120px; /* Tinggi sama dengan kotak + padding */
+    margin-bottom: 15px;
+}
+
+/* --- INI BAGIAN PENTINGNYA --- */
+
+.kotak-dua {
+    background-color: #e74c3c; /* Merah */
+    
+    /* 1. "Nyalakan mesinnya" */
+    position: relative; 
+    
+    /* 2. Sekarang kita bisa menggesernya */
+    top: 30px;  /* Geser 30px ke BAWAH dari posisi normalnya */
+    left: 50px; /* Geser 50px ke KANAN dari posisi normalnya */
+}
+
+.kotak-tiga {
+    background-color: #2ecc71; /* Hijau */
+}

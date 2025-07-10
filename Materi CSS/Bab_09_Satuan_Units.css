@@ -50,14 +50,14 @@ h2 {
 }
 
 .unit-viewport {
-    width: 100vw; /* 100% dari lebar jendela */
+    /* width: 100vw; /* 100% dari lebar jendela */
     height: 50vh; /* 50% dari tinggi jendela */
     background-color: #FADBD8; /* Merah muda */
     
     /* Trik untuk menggeser agar pas dengan layar */
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
+   /* --- INI TRIKNYA --- */
+  width: 100vw; /* 1. Lebarnya dibuat selebar viewport */
+  position: relative; /* 2. Aktifkan kemampuan untuk digeser */
+  left: 50%; /* 3. Geser titik awalnya ke tengah wadah induk */
+  margin-left: -50vw; /* 4. Tarik kembali ke kiri sejauh setengah lebar viewport */
 }

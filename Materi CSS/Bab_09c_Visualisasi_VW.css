@@ -1,0 +1,59 @@
+body {
+    margin: 0; /* Menghilangkan margin default agar vw 100 pas */
+    font-family: sans-serif;
+}
+
+.instruksi {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Gaya dasar untuk semua kotak */
+.kotak {
+    height: 100px; /* Memberi tinggi agar terlihat */
+    margin-bottom: 15px; /* Memberi jarak antar kotak */
+    color: white;
+    
+    /* Trik untuk menengahkan teks di dalam kotak secara vertikal */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 1.2em;
+    font-weight: bold;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.kotak p {
+    margin: 2px;
+}
+
+/* --- PERBEDAAN SETIAP VW --- */
+
+/* Lebar kotak ini 25% dari lebar jendela browser */
+.vw-25 {
+    width: 25vw;
+    background-color: #2980B9; /* Biru */
+}
+
+/* Lebar kotak ini 50% dari lebar jendela browser */
+.vw-50 {
+    width: 50vw;
+    background-color: #27AE60; /* Hijau */
+}
+
+/* Lebar kotak ini 75% dari lebar jendela browser */
+.vw-75 {
+    width: 75vw;
+    background-color: #E67E22; /* Oranye */
+}
+
+/* Lebar kotak ini 100% dari lebar jendela browser */
+.vw-100 {
+    width: 100vw;
+    background-color: #C0392B; /* Merah */
+    border-radius: 0; /* Hilangkan radius agar pas di layar */
+}

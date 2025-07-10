@@ -1,0 +1,38 @@
+/* File 2: Bab_09b_Full_Bleed.css */
+
+body {
+  margin: 0; /* Menghilangkan margin default dari body */
+  font-family: sans-serif;
+}
+
+/* Ini adalah wadah utama website kita. */
+.wadah-konten {
+  max-width: 800px; /* Lebar maksimal konten adalah 800px */
+  margin: 50px auto; /* Membuat wadah ini berada di tengah halaman */
+  background-color: #f0f0f0; /* Warna latar abu-abu agar batasnya terlihat */
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+/* Gaya untuk kotak normal */
+.kotak-normal {
+  background-color: #e3f2fd; /* Biru muda */
+  border: 1px solid #90caf9;
+  padding: 15px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+/* INI BAGIAN PENTINGNYA: Trik untuk membuat elemen layar penuh */
+.kotak-layar-penuh {
+  background-color: #ffcc80; /* Oranye muda */
+  padding: 40px 0; /* Padding atas-bawah 40px, kiri-kanan 0 */
+  text-align: center;
+  color: #bf360c;
+
+  /* --- INI TRIKNYA --- */
+  width: 100vw; /* 1. Lebarnya dibuat selebar viewport */
+  position: relative; /* 2. Aktifkan kemampuan untuk digeser */
+  left: 50%; /* 3. Geser titik awalnya ke tengah wadah induk */
+  margin-left: -50vw; /* 4. Tarik kembali ke kiri sejauh setengah lebar viewport */
+}
