@@ -1,0 +1,91 @@
+/* File 2: Bab_10_Layout_Flexbox.css */
+
+body {
+    font-family: sans-serif;
+    width: 90%;
+    margin: 20px auto;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+hr {
+    margin: 40px 0;
+    border: 1px solid #eee;
+}
+
+/* ======================================== */
+/* --- Contoh 1: Menu Navigasi --- */
+/* ======================================== */
+
+.navigasi-flex {
+    /* 1. "Aktifkan" Flexbox pada wadah <nav> */
+    display: flex;
+
+    /* 2. justify-content: Mengatur perataan item secara HORIZONTAL */
+    /* Pilihan lain: flex-start, flex-end, center, space-around */
+    justify-content: space-between;
+
+    /* 3. align-items: Mengatur perataan item secara VERTIKAL */
+    /* Pilihan lain: flex-start, flex-end, stretch (default) */
+    align-items: center;
+
+    background-color: #2c3e50; /* Biru gelap */
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+/* Memberi gaya khusus pada logo agar menonjol */
+.logo {
+    font-weight: bold;
+    font-size: 1.5em;
+    /* Trik untuk mendorong item ini ke tengah dengan margin auto */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ======================================== */
+/* --- Contoh 2: Galeri Kartu --- */
+/* ======================================== */
+
+.galeri-kartu {
+    /* 1. Aktifkan Flexbox */
+    display: flex;
+
+    /* 2. flex-wrap: Mengizinkan item untuk pindah ke baris baru jika tidak muat */
+    flex-wrap: wrap;
+
+    /* 3. gap: Memberi jarak (margin) antar flex items */
+    gap: 20px;
+}
+
+.kartu {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+
+    /* Properti 'flex: 1;' adalah jalan pintas yang sangat berguna.
+      Artinya, setiap kartu akan mencoba "tumbuh" (grow) secara fleksibel
+      untuk mengisi ruang yang tersedia secara merata.
+      Coba ubah ukuran jendela browser untuk melihat efeknya!
+    */
+    flex: 1;
+
+    /* Menentukan lebar dasar minimum untuk setiap kartu */
+    min-width: 250px;
+}
+
+.kartu h3 {
+    margin-top: 0;
+    color: #2980B9;
+}
