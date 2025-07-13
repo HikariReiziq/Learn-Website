@@ -1,0 +1,112 @@
+/* File 2: Final_Project_CSS.css (Versi Perbaikan) */
+
+/* ... (Kode Bagian A - D sama persis) ... */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --background-color: #ffffff;
+    --surface-color: #f8f9fa;
+    --text-color: #333333;
+    --border-color: #dddddd;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Poppins', sans-serif; color: var(--text-color); background-color: var(--background-color); line-height: 1.6; }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+.main-header { background-color: var(--background-color); padding: 15px 0; box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 10; }
+.main-header .container { display: flex; justify-content: space-between; align-items: center; }
+.main-nav ul { display: flex; list-style: none; gap: 30px; }
+.main-nav a { text-decoration: none; color: var(--secondary-color); font-weight: 600; transition: color 0.3s ease; }
+.main-nav a:hover { color: var(--primary-color); }
+.btn { display: inline-block; padding: 12px 28px; border-radius: 50px; text-decoration: none; font-weight: 600; transition: transform 0.3s ease, background-color 0.3s ease; }
+.btn-primary { background-color: var(--primary-color); color: white; }
+.btn-primary:hover { background-color: #2980b9; transform: scale(1.05); }
+.hero-section { background-color: var(--secondary-color); color: white; padding: 120px 0; text-align: center; }
+.hero-content h1 { font-size: 3.5rem; margin-bottom: 10px; }
+.hero-subtitle { font-size: 1.2rem; max-width: 600px; margin: 0 auto 30px auto; opacity: 0.9; }
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+.hero-content { animation: fadeInUp 1s ease-out; }
+
+
+/* Soal E (Diperbaiki) */
+.projects-section {
+    padding: 80px 0px;
+    background-color: var(--surface-color);
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background-color: var(--background-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    overflow: hidden;  
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* PERBAIKAN: Membuat gambar dan iframe responsif */
+.project-card img,
+.project-card iframe {
+    width: 100%; /* Lebar selalu 100% dari kartu */
+    display: block;
+}
+
+/* PERBAIKAN: Menambahkan aturan untuk video agar proporsinya bagus */
+.project-card iframe {
+    aspect-ratio: 16 / 9; /* Menjaga rasio video 16:9 */
+    border: none; /* Menghilangkan border default iframe */
+}
+
+/* PERBAIKAN: Menambahkan padding pada wadah konten, bukan pada gambar */
+.card-content {
+    padding: 10px;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Soal F */
+.contact-section{
+    padding: 80px;
+}
+
+.contact-form{
+    display: grid;
+    gap: 20px;
+    max-width: 600px;
+    margin: auto auto 0 auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus {
+   border-color: var(--primary-color);
+   box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+   outline: none; 
+}
+
+@media (max-width: 768px) {
+    .main-header, .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+    .hero-section .projects-section{
+        padding: 60px;
+    }
+}

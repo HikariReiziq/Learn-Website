@@ -45,7 +45,9 @@ body {
 
 label {
     display: block;
-    margin-bottom:  8px;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold;
 }
 
 input {
@@ -57,6 +59,7 @@ input {
 }
 
 input:focus {
+    outline: none; /* Menghilangkan outline default browser */
     border-color: #3498db;
     box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
 }
@@ -65,22 +68,45 @@ input:focus {
     width: 100%;
     background-color: #3498db;
     color: white;
-    padding: 20px 30px;
+    padding: 15px; /* Sedikit disesuaikan agar tidak terlalu besar */
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .login-button:hover{
-    background-color: #065b94;
+    background-color: #2980b9;
 }
 
+.form-footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.forgot-password{
+    color: #3498db;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.forgot-password:hover{
+    text-decoration: underline;
+}
+
+/* soal D */
 @media (max-width: 480px){
     .login-container{
-        padding: 0px 0px;
+        /* Padding diatur pada body atau container utama, bukan di sini */
+        padding: 20px;
     }
 
     .login-form{
-        box-shadow:rgba(52, 152, 219, 0.5)
+        /* PERBAIKAN: Menghilangkan bayangan dan radius sesuai instruksi */
+        box-shadow: none;
+        border-radius: 0;
+        padding: 25px;
     }
 }
-
-

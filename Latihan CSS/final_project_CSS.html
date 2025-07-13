@@ -1,0 +1,100 @@
+<!-- File 1: Final_Project_CSS.html (Versi Perbaikan) -->
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Hikari Reiziq - Web Developer</title>
+    <link rel="stylesheet" href="Final_Project_CSS.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <img class="Foto" src="../Assets/Hikari.png" alt="Foto Hikari" width="150"> 
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#about">Tentang Saya</a></li>
+                    <li><a href="#projects">Proyek</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Creative Web Developer</h1>
+                    <p class="hero-subtitle">Calon web Developer 😎.</p>
+                    <a href="#contact" class="btn btn-primary">Hubungi Saya</a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2>Proyek Terbaru Saya</h2>
+                <div class="project-grid">
+                    <!-- Kartu Proyek 1 -->
+                    <article class="project-card">
+                        <!-- PERBAIKAN: Atribut width dihapus -->
+                        <img src="../Assets/project1.png" alt="Gambar Proyek 1">
+                        <!-- PERBAIKAN: Konten dibungkus div agar padding rapi -->
+                        <div class="card-content">
+                            <h3>Project FoodMate</h3>
+                            <p>Sebuah aplikasi pencatatan bahan-bahan makanan dapur...</p>
+                            <!-- PERBAIKAN: Atribut width & height dihapus -->
+                            <iframe src="https://www.youtube.com/embed/TbhGdBBsfmI?si=-qNC8eOtS3zXOcfl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </article>
+                    <!-- Kartu Proyek 2 -->
+                    <article class="project-card">
+                        <img src="../Assets/project2.png" alt="Gambar Proyek 2">
+                        <div class="card-content">
+                            <h3>Project Analisis Dataset Shopping Trend</h3>
+                            <p>Project ini membahas analisis dataset mengenai tren belanja...</p>
+                            <iframe src="https://www.youtube.com/embed/-lU21iVW_YE?si=xBH4qOnGTL3MKUBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </article>
+                    <!-- Kartu Proyek 3 -->
+                    <article class="project-card">
+                        <img src="../Assets/project3.png" alt="Gambar Proyek 3">
+                        <div class="card-content">
+                            <h3>Project Architecture Enterprise</h3>
+                            <p>Menganalis arsitektur myITS StudentConnect...</p>
+                            <iframe src="https://www.youtube.com/embed/FFdPazMQJGI?si=yO-hszT8s8AmKhcI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ... (sisa kode HTML Anda sama) ... -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Hubungi Saya</h2>
+                <p>Punya ide menarik? Mari kita wujudkan bersama.</p>
+                <form class="contact-form">
+                    <input type="text" name="nama" placeholder="Nama Anda" required>
+                    <input type="email" name="email" placeholder="Email Anda" required>
+                    <textarea name="pesan" placeholder="Pesan Anda" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Hikari Reiziq. Dibuat dengan HTML & CSS.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
