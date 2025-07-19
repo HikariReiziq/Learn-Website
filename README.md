@@ -1,4 +1,4 @@
-# 🌐 Proyek Belajar HTML Dasar
+I# 🌐 Proyek Belajar HTML Dasar
 
 Selamat datang di repositori **"Belajar-Website"** saya! Repositori ini merupakan catatan perjalanan pribadi saya dalam mempelajari HTML dari dasar, dibimbing oleh Gemini. Setiap file di sini adalah hasil dari pemahaman, latihan, dan eksplorasi konsep-konsep fundamental HTML.
 
@@ -82,10 +82,6 @@ Puncak dari pembelajaran ini adalah `final_project.html`, sebuah halaman web tun
 - Penggunaan list, tabel, dan formulir yang terintegrasi.
 - Penyematan gambar, video YouTube, dan audio.
 - Penggunaan entitas karakter dan elemen inline.
-
-## 🔜 Langkah Selanjutnya
-
-Setelah menguasai fondasi HTML ini, langkah berikutnya adalah mempelajari **CSS (Cascading Style Sheets)** untuk mulai mendesain, memberi warna, mengatur layout, dan mempercantik halaman web.
 
 ---
 
