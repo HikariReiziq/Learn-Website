@@ -22,6 +22,8 @@ console.log('5 + 3 * 2 =', hasil); // Hasil: 11 (bukan 16), karena 3 * 2 dihitun
 let hasilDenganKurung = (5 + 3) * 2;
 console.log('(5 + 3) * 2 =', hasilDenganKurung); // Hasil: 16, karena 5 + 3 dihitung dulu.
 
+let cobaString = "Hello world";
+console.log(cobaString);
 
 // 3. Angka Desimal (Floating-Point Numbers)
 // JavaScript bisa menangani angka desimal.
@@ -52,3 +54,10 @@ console.log('Math.ceil(2.2) =', Math.ceil(2.2)); // Hasil: 3
 
 // Math.random(): Menghasilkan angka acak antara 0 dan 1.
 console.log('Angka acak:', Math.random());
+
+
+console.log ('Misal:', Math.round(2.8));
+console.log ('Misal:', Math.round(2.2));
+console.log ('Misal:', Math.floor(3.9));
+console.log ('Misal:', Math.ceil(2.2));
+console.log ('Misal:', Math.random());
