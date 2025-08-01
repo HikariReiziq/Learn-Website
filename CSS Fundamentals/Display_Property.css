@@ -1,0 +1,41 @@
+/* General styles for all targeted elements */
+body {
+    font-family: sans-serif;
+}
+
+div, span, button, a {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px;
+    margin: 5px;
+    text-decoration: none; /* Removes underline from the anchor tag */
+    border-radius: 5px;   /* Adds slightly rounded corners */
+}
+
+/* Specific styles for each element by ID */
+
+/* Block elements */
+#div-1 {
+    background-color: #c0392b; /* Red */
+}
+
+#div-2 {
+    background-color: #2980b9; /* Blue */
+}
+
+
+/* Inline & Inline-Block elements */
+#span-1 {
+    background-color: #f1c40f; /* Yellow */
+    color: #333; /* Darker text for readability */
+}
+
+#button-1 {
+    background-color: #8e44ad; /* Purple */
+    cursor: pointer;
+}
+
+#a-1 {
+    background-color: #27ae60; /* Green */
+}
