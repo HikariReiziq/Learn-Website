@@ -1,0 +1,80 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    margin:50px;
+}
+
+.box-container {
+    display: flex;
+    gap: 20px;
+    background-color: #d3d3d340;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.box{
+    display: flex;
+    height: 100px;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: white;
+    background-color: #f0f0f0;
+}
+
+.box-static1 {
+    background-color: #2694a2;
+    font-size: medium;
+}
+
+.box-static2 {
+    background-color: #5b9ca4;
+    font-size: medium;
+}
+
+.box-static3 {
+    background-color: #89bcc2;
+    font-size: medium;
+}
+
+/* ========================================== */
+
+.box-relative1 {
+    background-color: #2694a2;
+    font-size: medium;
+}
+
+.box-relative2 {
+    position: relative;
+    background-color: #5b9ca4;
+    font-size: medium;
+    top: 20px;
+    left: 20px;
+    
+}
+
+.box-relative3 {
+    background-color: #89bcc2;
+    font-size: medium;
+}
+
+.box-fixed{
+    background-color: rgb(44, 76, 164);
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+
+
