@@ -1,0 +1,21 @@
+body {
+    min-height: 800px;
+    border: 8px solid black;
+    /* flex-direction: colomn; --> biar contennya ke bawah*/ 
+    display: flex;
+    justify-content: space-evenly;
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    align-items: center;
+    /* justify-content: space-between ; */
+    /* justify-content: space-around; */
+
+}
+
+.box{ 
+    background-color: skyblue;
+    height: 200px;
+    width: 200px;
+    font-size: 20pt;
+}
+
