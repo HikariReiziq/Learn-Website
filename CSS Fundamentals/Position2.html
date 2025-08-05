@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar CSS Position & Z-Index</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Menghubungkan ke file CSS eksternal -->
+    <link rel="stylesheet" href="Position2.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <header>
+            <h1>Belajar CSS Position & Z-Index</h1>
+            <p>Demonstrasi visual 5 properti posisi penting dalam CSS.</p>
+        </header>
+
+        <!-- 1. Position: Static (Default) -->
+        <section class="card">
+            <h2 class="section-title">1. Position: Static</h2>
+            <p>Ini adalah nilai default. Elemen diatur sesuai alur normal halaman. Properti <code>top</code>, <code>right</code>, <code>bottom</code>, <code>left</code>, dan <code>z-index</code> tidak memiliki efek.</p>
+            <div class="box-container">
+                <div class="demo-box static-box-1">Box 1</div>
+                <div class="demo-box static-box-2">Box 2</div>
+                <div class="demo-box static-box-3">Box 3</div>
+            </div>
+        </section>
+
+        <!-- 2. Position: Relative -->
+        <section class="card">
+            <h2 class="section-title">2. Position: Relative</h2>
+            <p>Elemen diposisikan relatif terhadap posisi normalnya. Ruang aslinya tetap dipertahankan. Lihat Box 2 yang bergeser.</p>
+            <div class="box-container">
+                <div class="demo-box relative-box-1">Box 1</div>
+                <div id="relative-box" class="demo-box relative-box-2">Box 2 (Relative)</div>
+                <div class="demo-box relative-box-3">Box 3</div>
+            </div>
+        </section>
+
+        <!-- 3. Position: Absolute -->
+        <section class="card">
+            <h2 class="section-title">3. Position: Absolute</h2>
+            <p>Elemen diposisikan relatif terhadap "ancestor" terdekat yang memiliki posisi non-static. Di sini, Box 2 (Absolute) mengacu pada kontainer abu-abu.</p>
+            <div id="absolute-parent" class="box-container">
+                <div class="demo-box absolute-box-1">Box 1</div>
+                <div id="absolute-box" class="demo-box absolute-box-2">Box 2 (Absolute)</div>
+                <div class="demo-box absolute-box-3">Box 3</div>
+            </div>
+        </section>
+        
+        <!-- 4. Position: Fixed -->
+        <section class="card">
+            <h2 class="section-title">4. Position: Fixed</h2>
+            <p>Elemen diposisikan relatif terhadap viewport (jendela browser). Elemen ini akan tetap di tempatnya meskipun halaman di-scroll.</p>
+            <div id="fixed-box" class="demo-box">Fixed Box</div>
+        </section>
+
+        <!-- 5. Position: Sticky -->
+        <section class="card">
+            <h2 class="section-title">5. Position: Sticky</h2>
+            <p>Elemen ini bertindak seperti <code>relative</code> sampai mencapai titik tertentu saat scroll, lalu menjadi <code>fixed</code>. Scroll ke bawah untuk melihat menu ini menempel.</p>
+            <nav id="sticky-nav">
+                <ul>
+                    <li>Home</li>
+                    <li>Produk</li>
+                    <li>Layanan</li>
+                    <li>Kontak</li>
+                </ul>
+            </nav>
+            <div class="scroll-content">
+                <p>Konten tambahan di sini untuk memungkinkan scrolling...</p>
+            </div>
+        </section>
+        
+        <!-- Belajar Z-Index -->
+        <section class="card">
+            <h2 class="section-title">Belajar Z-Index</h2>
+            <p><code>z-index</code> menentukan urutan tumpukan elemen yang memiliki posisi. Nilai yang lebih tinggi akan berada di atas.</p>
+            <div id="z-index-container">
+                <div id="z-box-1" class="demo-box">z-index: 1</div>
+                <div id="z-box-2" class="demo-box">z-index: 2</div>
+                <div id="z-box-3" class="demo-box">z-index: 0</div>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>
