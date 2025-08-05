@@ -3,19 +3,31 @@ body {
     border: 8px solid black;
     /* flex-direction: colomn; --> biar contennya ke bawah*/ 
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    /* for main axes */
     /* justify-content: flex-start; */
     /* justify-content: flex-end; */
-    align-items: center;
+    align-items: center; 
+    /* for cross axis */
     /* justify-content: space-between ; */
     /* justify-content: space-around; */
-
+    /* flex-direction: column; */
+    align-content: center;
+    /* Untuk mengcenter tiap line 3 baris */
+    gap: 20px;
+    flex-wrap: wrap; 
+    /* agar lebih responsive */
 }
 
 .box{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: skyblue;
     height: 200px;
     width: 200px;
     font-size: 20pt;
+    /* justify-content: center; */
 }
+
 
