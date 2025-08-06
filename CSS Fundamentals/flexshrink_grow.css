@@ -1,0 +1,48 @@
+body {
+    min-height: 800px;
+    border: 8px solid black;
+    /* flex-direction: colomn; --> biar contennya ke bawah*/ 
+    display: flex;
+    gap: 20px;
+    font-size: 20pt;
+
+}
+
+
+.box{ 
+    flex-shrink: 1;
+    /* coba anda geser border browsernya */
+    min-width: 150px;
+    /* saat capai lebar minimal maka akan mematikan flex shrink */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: skyblue;
+    height: 200px;
+    width: 200px;
+    /* justify-content: center; */
+}
+
+/* mengatasi box yang keluar dari border kita bisa menggunakan media dengan flex wrap */
+@media (min-width: 140px) {
+    body {
+        flex-wrap: wrap;
+    }
+}
+
+/* #box-1{
+    flex-grow: 5;
+}
+
+.box{ 
+    flex-grow: 1;
+    coba anda geser border browsernya
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: skyblue;
+    height: 200px;
+    width: 200px;
+}
+ */
+
