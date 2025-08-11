@@ -85,7 +85,7 @@ Puncak dari pembelajaran ini adalah `final_project.html`, sebuah halaman web tun
 
 ---
 
-Terima kasih sudah mengunjungi repositori saya! Semoga bermanfaat dan menginspirasi perjalanan belajarmu juga. 🌟
+Semoga bermanfaat cuy
 
 ---
 
