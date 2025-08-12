@@ -83,6 +83,107 @@ Puncak dari pembelajaran ini adalah `final_project.html`, sebuah halaman web tun
 - Penyematan gambar, video YouTube, dan audio.
 - Penggunaan entitas karakter dan elemen inline.
 
+Proyek Belajar CSS: Dari Dasar hingga Desain Modern
+Selamat datang di repositori pembelajaran CSS saya! Repositori ini adalah kelanjutan dari perjalanan saya belajar pengembangan web, di mana saya beralih dari struktur (HTML) ke gaya dan desain (CSS), dibimbing oleh Gemini. Setiap file di sini mendokumentasikan pemahaman dan penerapan konsep-konsep inti CSS untuk membangun halaman web yang modern, responsif, dan elegan.
+
+Tujuan Proyek:
+Untuk menguasai CSS dari dasar, mulai dari styling teks dan warna, memahami Box Model, hingga mampu membangun layout yang kompleks dan responsif menggunakan Flexbox dan Grid, serta menambahkan interaktivitas visual dengan transisi dan animasi.
+
+📂 Struktur Folder
+Proyek ini berisi file-file .html dan .css yang diberi nama sesuai dengan bab pembelajarannya, misalnya Bab_04_Box_Model.html dan Bab_04_Box_Model.css. Selain itu, terdapat proyek-proyek gabungan yang menguji pemahaman dari beberapa bab sekaligus.
+
+/Latihan: Berisi file-file latihan spesifik untuk setiap bab dan latihan gabungan.
+
+Final_Project_CSS.html: Halaman portofolio pribadi yang menjadi puncak dari pembelajaran CSS, mengintegrasikan semua konsep yang dipelajari.
+
+Final_Project_CSS.css: File stylesheet utama untuk proyek akhir.
+
+README.md: File dokumentasi ini.
+
+📚 Topik yang Telah Dipelajari
+Berikut adalah rangkuman dari topik-topik utama yang telah dibahas dan dipraktikkan dalam proyek ini:
+
+Fase 1: Fondasi Styling
+Bab 1: Pengenalan CSS
+
+Memahami 3 cara menambahkan CSS: Inline, Internal, dan External (metode yang direkomendasikan).
+
+Bab 2: CSS Selectors
+
+Menargetkan elemen dengan Element Selector (p), Class Selector (.nama-class), dan ID Selector (#nama-id).
+
+Bab 3: Warna & Latar Belakang
+
+Menerapkan gaya dengan properti color dan background-color.
+
+Menggunakan berbagai format warna: Nama Warna, HEX, dan RGB.
+
+Fase 2: Spasi, Layout & Tipografi
+Bab 4: CSS Box Model
+
+Memahami konsep fundamental: Content, Padding (ruang di dalam), Border (bingkai), dan Margin (ruang di luar).
+
+Bab 5: CSS Typography
+
+Mengatur tampilan teks dengan font-family, font-size, font-weight, text-align, dan line-height.
+
+Bab 6: Styling Link, List, & Tabel
+
+Memberi gaya pada berbagai state link (:hover, :visited).
+
+Mengubah penanda pada list (list-style-type).
+
+Membuat tabel yang rapi dengan border-collapse dan efek "zebra stripes".
+
+Fase 3: Konsep CSS Tingkat Lanjut
+Bab 7: Properti display
+
+Memahami perbedaan perilaku elemen: block, inline, inline-block, dan none.
+
+Bab 8: Inheritance & Specificity
+
+Memahami aturan "pewarisan" gaya dan hierarki kekuatan selektor (Element < Class < ID < Inline Style < !important).
+
+Bab 9: Satuan Ukuran (CSS Units)
+
+Perbedaan satuan Absolut (px) dan Relatif (%, em, rem, vw, vh).
+
+Fase 4: Layout Modern & Desain Responsif
+Bab 10: CSS Flexbox
+
+Membuat layout satu dimensi yang fleksibel. Menguasai display: flex, justify-content, dan align-items.
+
+Bab 11: CSS Grid
+
+Membuat layout dua dimensi (baris dan kolom) yang kompleks. Menguasai display: grid dan grid-template-areas.
+
+Bab 12: Desain Responsif
+
+Menggunakan Media Queries (@media) untuk membuat website beradaptasi dengan berbagai ukuran layar (desktop, tablet, mobile).
+
+Fase 5: Interaktivitas Visual
+Bab 13: Transisi & Animasi
+
+Membuat perubahan gaya yang mulus dengan transition.
+
+Menciptakan animasi yang kompleks dan berulang dengan @keyframes dan animation.
+
+🚀 Proyek Akhir: Halaman Portofolio Profesional
+Puncak dari pembelajaran ini adalah Final_Project_CSS.html, sebuah halaman portofolio single-page yang mendemonstrasikan semua keterampilan di atas. Proyek ini mencakup:
+
+Layout yang sepenuhnya responsif menggunakan Flexbox dan Grid.
+
+Skema warna dan tipografi yang konsisten menggunakan variabel CSS.
+
+Efek interaktif pada tombol dan kartu proyek dengan transisi dan animasi.
+
+Desain yang bersih, modern, dan profesional.
+
+Langkah Selanjutnya
+Setelah menguasai struktur (HTML) dan presentasi (CSS), langkah logis berikutnya adalah mempelajari JavaScript untuk menambahkan interaktivitas dan logika ("otak") pada halaman web.
+
+Terima kasih telah mengunjungi repositori ini!
+
 ---
 
 Semoga bermanfaat cuy
