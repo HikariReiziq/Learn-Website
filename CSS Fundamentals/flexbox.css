@@ -12,17 +12,17 @@ body {
     /* justify-content: space-between ; */
     /* justify-content: space-around; */
     /* flex-direction: column; */
-    align-content: center;
+    /* align-content: center; */
     /* Untuk mengcenter tiap line 3 baris */
     gap: 20px;
-    flex-wrap: wrap; 
+    /* flex-wrap: wrap;  */
     /* agar lebih responsive */
 }
 
 .box{ 
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center;  */
     background-color: skyblue;
     height: 200px;
     width: 200px;
