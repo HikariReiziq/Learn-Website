@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>NovaShop — Toko</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- header -->
+  <header class="header">
+    <div class="container header__row">
+      <a class="brand" href="index.html"><div class="brand__logo"></div><span>NovaShop</span></a>
+      <form class="search" action="store.html"><input name="q" placeholder="Cari produk..."><button>Cari</button></form>
+      <nav class="nav"><a class="btn" href="store.html">Toko</a><a class="btn btn--accent" href="cart.html">Keranjang <span class="badge" id="navCartCount">0</span></a></nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h1>Toko: <span id="storeName">Semua</span></h1>
+      <p class="muted">Gunakan tombol di tiap produk untuk ke toko atau tambah ke keranjang.</p>
+
+      <div class="grid">
+        <!-- 8 produk contoh -->
+        <!-- Gunakan data-* agar JS opsional bisa bekerja -->
+        <article class="card product">
+          <a href="product.html?id=SKU-003"><div class="product__thumb">Gambar Produk</div></a>
+          <div class="product__meta">
+            <a class="product__title" href="product.html?id=SKU-003">Mouse Orion M5</a>
+            <div class="product__price">Rp 299.000</div>
+            <div class="product__actions">
+              <a class="btn" href="store.html?store=OrionGear">Ke Toko</a>
+              <button class="btn btn--accent btn-add" data-id="SKU-003" data-name="Mouse Orion M5" data-price="299000">Tambah</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Duplikasi pola untuk contoh lain -->
+        <article class="card product">
+          <a href="product.html?id=SKU-004"><div class="product__thumb">Gambar Produk</div></a>
+          <div class="product__meta">
+            <a class="product__title" href="product.html?id=SKU-004">Monitor Aether 27"</a>
+            <div class="product__price">Rp 3.299.000</div>
+            <div class="product__actions">
+              <a class="btn" href="store.html?store=AetherDisplays">Ke Toko</a>
+              <button class="btn btn--accent btn-add" data-id="SKU-004" data-name="Monitor Aether 27&quot;" data-price="3299000">Tambah</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Tambahkan item lain sesuai kebutuhan -->
+      </div>
+
+      <nav class="pagination">
+        <span class="is-active">1</span>
+        <a href="store-page2.html">Next ›</a>
+      </nav>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container"><small>© 2025 NovaShop.</small></div></footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
