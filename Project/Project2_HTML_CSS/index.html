@@ -1,13 +1,68 @@
-<!-- .product$*4 + enter -->
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 2</title>
-    <link rel="style" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>NovaShop — Beranda</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+  <!-- include header -->
+  <header class="header">
+    <div class="container header__row">
+      <a class="brand" href="index.html"><div class="brand__logo"></div><span>NovaShop</span></a>
+      <form class="search" action="store.html"><input name="q" placeholder="Cari produk..."><button>Cari</button></form>
+      <nav class="nav"><a class="btn" href="store.html">Toko</a><a class="btn btn--accent" href="cart.html">Keranjang <span class="badge" id="navCartCount">0</span></a></nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <div class="card" style="padding:20px;">
+        <h1>Temukan produk favoritmu</h1>
+        <p>Belanja aman, cepat, dan modern. Mulai jelajah katalog di halaman Toko.</p>
+        <div style="margin-top:12px;">
+          <a class="btn btn--accent" href="store.html">Lihat Toko</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Produk Unggulan</h2>
+      <div class="grid">
+        <!-- Card contoh -->
+        <article class="card product">
+          <a href="product.html?id=SKU-001">
+            <div class="product__thumb">Gambar Produk</div>
+          </a>
+          <div class="product__meta">
+            <a class="product__title" href="product.html?id=SKU-001">Headphone Nova X1</a>
+            <div class="product__price">Rp 799.000</div>
+            <div class="product__actions">
+              <a class="btn" href="store.html?store=NovaAudio">Ke Toko</a>
+              <button class="btn btn--accent btn-add" data-id="SKU-001" data-name="Headphone Nova X1" data-price="799000">Tambah</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card product">
+          <a href="product.html?id=SKU-002"><div class="product__thumb">Gambar Produk</div></a>
+          <div class="product__meta">
+            <a class="product__title" href="product.html?id=SKU-002">Keyboard Lumina K75</a>
+            <div class="product__price">Rp 1.299.000</div>
+            <div class="product__actions">
+              <a class="btn" href="store.html?store=LuminaKeys">Ke Toko</a>
+              <button class="btn btn--accent btn-add" data-id="SKU-002" data-name="Keyboard Lumina K75" data-price="1299000">Tambah</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- include footer -->
+  <footer class="footer"><div class="container"><small>© 2025 NovaShop.</small></div></footer>
+
+  <script src="app.js"></script>
 </body>
 </html>

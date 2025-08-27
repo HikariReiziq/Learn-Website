@@ -1,0 +1,97 @@
+:root {
+  --bg: #0b0f14;
+  --card: #121823;
+  --muted: #8ea0b5;
+  --text: #e6edf3;
+  --accent: #4f8cff;
+  --accent-2: #22c55e;
+  --danger: #ef4444;
+  --radius: 12px;
+  --shadow: 0 8px 24px rgba(0,0,0,.35);
+  --maxw: 1200px;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font: 500 16px/1.6 Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial; }
+
+a { color: var(--text); text-decoration: none; }
+img { display: block; width: 100%; height: auto; border-radius: 10px; }
+
+.container { width: min(100% - 24px, var(--maxw)); margin-inline: auto; }
+
+/* Header */
+.header {
+  position: sticky; top: 0; z-index: 10; backdrop-filter: blur(8px);
+  background: rgba(11,15,20,.6); border-bottom: 1px solid #1e293b;
+}
+.header__row {
+  display: flex; align-items: center; gap: 16px; padding: 14px 0;
+}
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 800; letter-spacing: .4px; }
+.brand__logo { width: 28px; height: 28px; border-radius: 8px; background: linear-gradient(135deg, var(--accent), #9b8cff); }
+
+.search {
+  flex: 1; display: flex; align-items: center; gap: 8px;
+  background: var(--card); padding: 10px 12px; border-radius: 10px; border: 1px solid #1f2937;
+}
+.search input { flex: 1; background: transparent; border: 0; color: var(--text); outline: none; }
+.search button {
+  background: #1f2937; color: var(--text); border: 1px solid #334155; padding: 8px 12px; border-radius: 8px; cursor: pointer;
+}
+
+.nav { display: flex; gap: 10px; }
+.btn {
+  display: inline-flex; align-items: center; gap: 8px; padding: 10px 14px; border-radius: 10px; border: 1px solid #1f2937;
+  background: #121826; color: var(--text); cursor: pointer; transition: transform .06s ease, background .2s ease;
+}
+.btn:hover { background: #172033; }
+.btn:active { transform: translateY(1px); }
+.btn--accent { background: var(--accent); border-color: transparent; color: white; }
+.badge {
+  display: inline-grid; place-items: center;
+  min-width: 20px; height: 20px; font-size: 12px; border-radius: 999px;
+  background: var(--accent-2); color: #04110a; padding: 0 6px; font-weight: 700;
+}
+
+/* Hero / Sections */
+.section { padding: 28px 0; }
+.card {
+  background: var(--card); border: 1px solid #1f2937; border-radius: var(--radius); box-shadow: var(--shadow);
+}
+
+/* Product grid */
+.grid {
+  display: grid; gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+.product {
+  overflow: hidden; padding: 12px;
+}
+.product__thumb {
+  aspect-ratio: 4/3; background: #0f172a; display: grid; place-items: center; color: var(--muted); font-size: 14px; border-radius: 10px;
+}
+.product__meta { margin-top: 10px; display: grid; gap: 8px; }
+.product__title { font-weight: 700; }
+.product__price { color: #b1c6e0; }
+.product__actions { display: flex; gap: 8px; }
+
+/* Product detail */
+.product-view { display: grid; gap: 24px; grid-template-columns: 1.1fr 1fr; }
+@media (max-width: 900px) { .product-view { grid-template-columns: 1fr; } }
+.gallery { aspect-ratio: 16/10; background: #0f172a; border-radius: 12px; display: grid; place-items: center; }
+
+/* Lists / table-ish */
+.list { display: grid; gap: 12px; }
+.row { display: grid; grid-template-columns: 1fr auto auto; gap: 12px; align-items: center; padding: 12px; border-radius: 10px; background: #0f172a; }
+.qty { display: inline-flex; align-items: center; gap: 8px; }
+.qty button { width: 28px; height: 28px; border-radius: 8px; border: 1px solid #334155; background: #121826; color: var(--text); cursor: pointer; }
+
+/* Pagination */
+.pagination { display: flex; gap: 8px; justify-content: center; margin-top: 16px; }
+.pagination a, .pagination span {
+  padding: 8px 12px; border-radius: 8px; border: 1px solid #1f2937; background: #121826;
+}
+.pagination .is-active { background: var(--accent); color: white; border-color: transparent; }
+
+/* Footer */
+.footer { color: var(--muted); border-top: 1px solid #1e293b; padding: 24px 0 40px; margin-top: 24px; }
