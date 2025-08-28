@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>NovaShop — Keranjang</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- header -->
+  <header class="header">
+    <div class="container header__row">
+      <a class="brand" href="index.html"><div class="brand__logo"></div><span>NovaShop</span></a>
+      <form class="search" action="store.html"><input name="q" placeholder="Cari produk..."><button>Cari</button></form>
+      <nav class="nav"><a class="btn" href="store.html">Toko</a><a class="btn btn--accent" href="cart.html">Keranjang <span class="badge" id="navCartCount">0</span></a></nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h1>Keranjang</h1>
+      <div class="card" style="padding:16px;">
+        <div id="cartEmpty">Keranjang kosong. <a class="btn" href="store.html" style="margin-left:8px;">Belanja</a></div>
+        <div id="cartList" class="list" style="display:none;"></div>
+        <div id="cartSummary" style="display:none; margin-top:12px;">
+          <div class="row">
+            <strong>Total</strong>
+            <strong id="cartTotal">Rp 0</strong>
+            <button class="btn btn--accent" id="checkoutBtn">Checkout</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container"><small>© 2025 NovaShop.</small></div></footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
