@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>NovaShop — Produk</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- header -->
+  <header class="header">
+    <div class="container header__row">
+      <a class="brand" href="index.html"><div class="brand__logo"></div><span>NovaShop</span></a>
+      <form class="search" action="store.html"><input name="q" placeholder="Cari produk..."><button>Cari</button></form>
+      <nav class="nav"><a class="btn" href="store.html">Toko</a><a class="btn btn--accent" href="cart.html">Keranjang <span class="badge" id="navCartCount">0</span></a></nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section product-view">
+      <div>
+        <div class="card gallery">Galeri Gambar</div>
+        <div class="list" style="margin-top:12px;">
+          <div class="row"><span>Garansi</span><span>12 bulan</span><span></span></div>
+          <div class="row"><span>Pengiriman</span><span>Seluruh Indonesia</span><span></span></div>
+        </div>
+      </div>
+      <div>
+        <h1 id="prodTitle">Produk</h1>
+        <p class="muted" id="prodSku">SKU-XXX</p>
+        <h2 id="prodPrice">Rp -</h2>
+        <div style="display:flex; gap:8px; margin:12px 0;">
+          <a class="btn" id="prodStoreLink" href="store.html?store=DefaultStore">Ke Toko</a>
+          <button class="btn btn--accent btn-add" id="prodAdd"
+            data-id="SKU-001" data-name="Headphone Nova X1" data-price="799000">Tambah ke Keranjang</button>
+        </div>
+        <div class="card" style="padding:16px; margin-top:12px;">
+          <h3>Deskripsi</h3>
+          <p id="prodDesc">Deskripsi singkat produk ini. Kamu bisa mengisi dari database nanti.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container"><small>© 2025 NovaShop.</small></div></footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
