@@ -41,7 +41,7 @@ if (umur >= 17) {
 console.log('\n--- 4. Pernyataan "else" (Jika Tidak) ---');
 // Menambahkan blok kode yang akan dijalankan jika kondisi if bernilai false.
 
-const suhu = 31; // dalam Celcius
+const suhu = 29; // dalam Celcius
 
 if (suhu > 30) {
   console.log('Cuaca hari ini panas!');
