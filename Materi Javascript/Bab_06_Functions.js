@@ -68,7 +68,7 @@ console.log('\n--- Contoh Gabungan ---');
 function konversiSuhu(celcius) {
   const fahrenheit = (celcius * 9/5) + 32;
   return fahrenheit;
-}
+} 
 
 const suhuDiJakarta = 31;
 const suhuDiLondon = 14;
