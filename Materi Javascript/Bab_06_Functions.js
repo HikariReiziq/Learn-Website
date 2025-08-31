@@ -78,3 +78,13 @@ const fahrenheitLondon = konversiSuhu(suhuDiLondon);
 
 console.log(`${suhuDiJakarta}°C sama dengan ${fahrenheitJakarta}°F.`);
 console.log(`${suhuDiLondon}°C sama dengan ${fahrenheitLondon}°F.`);
+
+function konversiCuy(faranheit){
+    const celcius = (faranheit - 32) * 5/9;
+}
+
+const suhuDiSurabaya = 80;
+const suhuDiNewyork = 70;
+
+const celciusSurabaya = konversiCuy(suhuDiSurabaya);
+const celciusNewyork = konversiCuy(suhuDiNewyork);
