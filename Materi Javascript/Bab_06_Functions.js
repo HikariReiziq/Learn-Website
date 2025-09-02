@@ -88,3 +88,4 @@ const suhuDiNewyork = 70;
 
 const celciusSurabaya = konversiCuy(suhuDiSurabaya);
 const celciusNewyork = konversiCuy(suhuDiNewyork);
+
