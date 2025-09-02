@@ -91,7 +91,17 @@ userProfile.hobi = 'Membaca Buku';
 console.log("--- Data Akhir ---");
 console.log(userProfile);
 
+const mahasiswa = {
+  nama: 'Hikari',
+  jurusan: 'Teknologi Informasi',
+  angkatan: 2023,
+  perkenalan: function() {
+    console.log(`Halo, saya ${this.nama} dari jurusan ${this.jurusan}.`);
+  }
+};
 
+mahasiswa.perkenalan();
+console.log('Angkatan:', mahasiswa.angkatan);
 
 
 
