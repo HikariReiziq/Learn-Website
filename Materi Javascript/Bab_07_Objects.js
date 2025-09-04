@@ -3,50 +3,39 @@
 // Mengelompokkan data yang saling berhubungan
 // ======================================
 
-
 // --- 1. Membuat Objek ---
-// Objek dibuat dengan kurung kurawal {}
-// Di dalamnya ada pasangan key: value (kunci: nilai)
 const product = {
-  // 'name' adalah key, 'Kaos Polos' adalah value
-  name: 'Kaos Polos',
+  name: 'Kaos Polos',          // key: value
   price: 75000,
-  'delivery-time': '2-3 hari' // Key dengan karakter khusus harus pakai kutip
+  'delivery-time': '2-3 hari'  // key dengan karakter khusus harus pakai kutip
 };
 
 console.log('Ini adalah sebuah objek produk:');
 console.log(product);
 
-
-// --- 2. Mengakses Properti (Data di dalam Objek) ---
-// a. Dot Notation (Cara paling umum)
-console.log('Nama produk (dot notation):', product.name);
+// --- 2. Mengakses Properti ---
+// a. Dot Notation
+console.log('Nama produk:', product.name);
 console.log('Harga produk:', product.price);
 
-// b. Bracket Notation (Wajib untuk key dengan spasi/strip)
+// b. Bracket Notation (untuk key dengan spasi/strip)
 console.log('Waktu pengiriman:', product['delivery-time']);
 
-// Kita juga bisa memasukkan variabel ke dalam bracket notation
+// Mengakses properti dengan variabel
 const propertyToAccess = 'price';
-console.log('Mengakses harga via variabel:', product[propertyToAccess]); // sama dengan product['price']
+console.log('Harga via variabel:', product[propertyToAccess]);
 
-
-// --- 3. Mengubah dan Menambah Properti ---
+// --- 3. Mengubah & Menambah Properti ---
 console.log('Harga sebelum diskon:', product.price);
-product.price = 60000; // Mengubah nilai properti price
+product.price = 60000; // ubah nilai
 console.log('Harga setelah diskon:', product.price);
 
-// Menambah properti baru
-product.stock = 150;
-console.log('Objek produk setelah ditambah stok:');
-console.log(product);
-
+product.stock = 150; // tambah properti baru
+console.log('Produk setelah ditambah stok:', product);
 
 // --- 4. Method (Fungsi di dalam Objek) ---
 const calculator = {
-  // Properti
   brand: 'Casio',
-  // Method
   add: function(a, b) {
     return a + b;
   },
@@ -55,40 +44,32 @@ const calculator = {
   }
 };
 
-// Memanggil method dari objek
-const hasilPenjumlahan = calculator.add(5, 3);
-console.log('Hasil 5 + 3 dari method:', hasilPenjumlahan);
-console.log('Hasil 10 - 4 dari method:', calculator.subtract(10, 4));
+console.log('Hasil 5 + 3:', calculator.add(5, 3));
+console.log('Hasil 10 - 4:', calculator.subtract(10, 4));
 
+// --- 5. Objek Bawaan ---
+console.log('Angka random:', Math.random());
 
-// --- 5. Objek Bawaan (Built-in Objects) ---
-// Kita sudah sering menggunakannya!
-// 'console' adalah objek, dan 'log' adalah method-nya.
-// 'Math' adalah objek, dan 'random' adalah method-nya.
-console.log(Math.random());
-
-
-console.log("Latihan");
-
+// --- Latihan ---
 const userProfile = {
-    nama: 'Alex',
-    umur: 28,
-    isMember : true,
-    displayInfo: function(){
-        console.log("Menampilkan profil pengguna...");
-    }
+  nama: 'Alex',
+  umur: 28,
+  isMember: true,
+  displayInfo: function() {
+    console.log(`Nama: ${this.nama}, Umur: ${this.umur}, Member: ${this.isMember}`);
+  }
 };
-console.log("--- Data Awal ---");
+
+console.log('--- Data Awal ---');
 console.log(userProfile);
-console.log(userProfile.nama)
+console.log(userProfile.nama);
 
 userProfile.displayInfo();
 
-userProfile.umur = 29;
-console.log(userProfile.umur)
+userProfile.umur = 29; // ubah umur
+userProfile.hobi = 'Membaca Buku'; // tambah properti baru
 
-userProfile.hobi = 'Membaca Buku';
-console.log("--- Data Akhir ---");
+console.log('--- Data Akhir ---');
 console.log(userProfile);
 
 const mahasiswa = {
