@@ -12,7 +12,7 @@ const tombolKembalikan = document.querySelector('.js-tombol-kembalikan');
 
 console.log('Elemen paragraf yang berhasil ditangkap:', paragraf);
 console.log('Elemen tombol yang berhasil ditangkap:', tombolUbah);
-    
+
 
 // =========================================================
 // LANGKAH 2: MENDENGARKAN AKSI PENGGUNA (Telinga JavaScript)
@@ -30,7 +30,7 @@ tombolUbah.addEventListener('click', function() {
     // LANGKAH 3: MEMANIPULASI HTML (Tangan JavaScript)
     // ============================================================
     // Sekarang kita perintahkan elemen 'paragraf' untuk mengubah isinya.
-    paragraf.innerHTML = 'Hore! Teks ini berhasil diubah oleh JavaScript setelah tombol diklik.';
+    paragraf.innerHTML = 'BERUBAH!';
 });
 
 
