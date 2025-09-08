@@ -8,7 +8,7 @@ const daftarIsi = []; //[IPA, BAHASA, MTK]
 console.log("isi dari daftar isi: ", daftarIsi);
 
 function renderTodoList(){
-    let isiHtml = '';
+    let isiHtml = ''; //Variabel untuk ditampilkan
 
     daftarIsi.forEach(function(task) {
         
