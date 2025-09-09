@@ -7,19 +7,12 @@ const kalender = document.querySelector('.js-due-date-input')
 
 const daftarIsi = []; //[IPA, BAHASA, MTK]
 
-console.log("isi dari daftar isi: ", daftarIsi);
+console.log("isi dari daftar isi: ", todoList);
 
 const renderTodoList = () => {
     let isiHtml = ''; //Variabel untuk ditampilkan
 
-    // daftarIsi.forEach(function(task) {
-        
-    //     //isiHtml = ipa;
-    //     const temp = `<li>${task}`;
-    //     isiHtml = isiHtml + temp;
-    //     console.log(`forEach: ${isiHtml}`);
-    // })
-    daftarIsi.forEach((task) => {
+    todoList.forEach((task) => {
         const { ketikanTugas, ketikanKalender} = task ;
         const temp =  `<li><div>${ketikanTugas} - ${ketikanKalender}<div>`;
         isiHtml = isiHtml + temp;
@@ -32,14 +25,14 @@ tombolInput.addEventListener('click', () => {
     const ketikanTugas = input.value;
     const ketikanKalender = kalender.value;
     
-    daftarIsi.push({
+    todoList.push({
         ketikanTugas, 
         ketikanKalender
     });
     
     input.value= '';  
     kalender.value= '';  
-    console.log(`mengeluarkan`, daftarIsi)
+    console.log(`mengeluarkan`, todoList)
     renderTodoList();
     // console.log(`tombol berhasil, mengeluarkan ${daftarIsi}`);
 });
