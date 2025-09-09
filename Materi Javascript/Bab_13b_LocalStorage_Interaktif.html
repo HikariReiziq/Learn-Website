@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Bab 13: localStorage Interaktif</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        input { padding: 8px; font-size: 16px; margin-right: 10px; }
+        button { padding: 8px 12px; font-size: 16px; cursor: pointer; margin-right: 5px;}
+        .output { margin-top: 20px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>localStorage & JSON - Versi Interaktif</h1>
+    
+    <h3>Simpan Nama Anda</h3>
+    <input type="text" class="js-name-input" placeholder="Ketik nama Anda...">
+    <button class="js-save-button">Simpan</button>
+
+    <h3>Data yang Tersimpan</h3>
+    <button class="js-load-button">Muat Nama</button>
+    <button class="js-clear-button">Hapus Nama</button>
+    <p class="output">Nama yang tersimpan: <span class="js-output-name">...</span></p>
+    <hr>
+    <p>
+        Buka konsol (F12) untuk melihat contoh penyimpanan data kompleks (Objek) dengan JSON.
+    </p>
+
+    <script src="Bab_13b_LocalStorage_Interaktif.js"></script>
+</body>
+</html>
