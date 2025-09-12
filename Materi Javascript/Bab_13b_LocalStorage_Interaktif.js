@@ -16,7 +16,7 @@ saveButton.addEventListener('click', () => {
     
     console.log(`Nama "${userName}" berhasil disimpan!`);
     nameInput.value = ''; // Kosongkan input setelah disimpan
-    loadAndDisplayData(); // Langsung tampilkan data yang baru disimpan
+    //loadAndDisplayData(); // Langsung tampilkan data yang baru disimpan
 });
 
 // 3. Pasang event listener untuk tombol "Muat"
