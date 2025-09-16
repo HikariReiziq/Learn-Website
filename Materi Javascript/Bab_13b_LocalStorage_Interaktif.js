@@ -52,3 +52,16 @@ const loadAndDisplayData = () => {
 //    Ini akan langsung menampilkan data jika ada.
 loadAndDisplayData();
 
+
+    kalender.value= '';
+    todoList.push({
+        task, 
+        calendar
+    }); 
+    console.log('Daftar isi setelah ditambah: ', todoList);
+    renderTodoList();
+    kalender.value= '';
+    console.log('Daftar isi setelah ditambah: ', todoList);
+    renderTodoList();
+
+
