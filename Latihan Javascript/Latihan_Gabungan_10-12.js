@@ -65,3 +65,11 @@ tombolInput.addEventListener('click', () => {
     console.log(`mengeluarkan`, todoList)
     renderTodoList();
 });
+
+kalender.value= '';
+todoList.push({
+    task,
+    calendar
+}); 
+console.log('Daftar isi setelah ditambah: ', todoList);
+renderTodoList();
