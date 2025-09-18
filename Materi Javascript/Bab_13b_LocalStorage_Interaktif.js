@@ -64,4 +64,28 @@ loadAndDisplayData();
     console.log('Daftar isi setelah ditambah: ', todoList);
     renderTodoList();
 
+const isi = document.querySelector('.js-todo-list');
+const todoList = []; //[IPA, BAHASA, MTK]
+console.log("isi dari daftar isi: ", todoList);
+
+const renderTodoList = () => {
+    let isiHtml = '';   
+    // Perubahan ada di dalam forEach ini
+    todoList.forEach((todoObject, index) => {
+        const { task, calendar} = todoObject;
+        // --- SOLUSI ---
+        // Buat setiap bagian (nama, tanggal, tombol) sebagai elemennya sendiri
+        // Jangan bungkus mereka semua dalam satu div/li.
+        const temp =  `
+            <div>${task}</div>
+            <div>${calendar}</div>
+            <button onclick="deleteTodo(${index})" class="delete-todo-button">Hapus</button>
+        `;
+        isiHtml += temp;
+    });
+
+    isi.innerHTML = isiHtml;
+    console.log(`Muncul di HTML: ${isiHtml}`);
+}
+
 
