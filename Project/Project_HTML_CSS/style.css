@@ -115,3 +115,16 @@ body {
 .register-link p a:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 430px) {
+    .wrapper {
+        width: 90%;
+        padding: 30px 20px;
+    }
+}
+@media (max-height: 600px) {
+    body {
+        align-items: flex-start;
+        padding: 40px 0;
+    }
+}
